@@ -22,7 +22,7 @@
 </div>
 </details>
 
-<!--
+
 <details>
 <summary><b>[Week 3] dd </b></summary>  
 <div markdown="1">   
@@ -31,4 +31,3 @@
 
 </div>
 </details>
---!>
