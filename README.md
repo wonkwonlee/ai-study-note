@@ -6,15 +6,16 @@
 <details>
 <summary><b>[Week 1] Data Structure and Algorithm </b></summary>   
 <div markdown="1">   
-   
-   
+
 + [Complexity]()
 
 </div>
 
 <details>
 <summary><b>[Week 2] dd </b></summary>   
-<div markdown="1">   
+<div markdown="1"> 
+   
+  + [C]
   
 </div>
 
@@ -22,4 +23,6 @@
 <summary><b>[Week 3] dd </b></summary>   
 <div markdown="1">   
   
+    + [C]
+
 </div>
