@@ -14,7 +14,7 @@
 
 
 <details>
-<summary><b>[Week 2] Mathematics for AI </b></summary>   
+<summary><b>[Week 2] Mathematics for AI and Visualization </b></summary>   
 <div markdown="1"> 
    
   + [C]()
