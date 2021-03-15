@@ -1,6 +1,6 @@
 # 함수와 클래스 Function and Class
 
-관련 실습 주피터 노트북 [function-and-class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Basic-Python/function-and-class.ipynb) 참조
+관련 실습 주피터 노트북 [function-and-class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Intro-to-Python/function-and-class.ipynb) 참조
 
 ## 함수 Function
 > 함수란 입력값(Input)에 대한 결과값(Output)을 내놓기 까지의 과정을 의미한다.
