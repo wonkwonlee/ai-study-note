@@ -7,7 +7,7 @@
 <summary><b>Data Structure and Algorithm</b></summary>   
 <div markdown="1">   
 
-+ [Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
++ [복잡도 Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
 
 </div>
 </details>
@@ -17,7 +17,7 @@
 <summary><b>Mathematics for AI and Visualization </b></summary>   
 <div markdown="1"> 
    
-+ [A]()
++ [함수 Function](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Function.md)
   
 </div>
 </details>
@@ -27,7 +27,7 @@
 <summary><b>Basic Python</b></summary>  
 <div markdown="1">   
   
-+ [Function and Class]()
++ [함수와 클래스Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Basic-Python/Function-and-Class.md)
 
 </div>
 </details>
