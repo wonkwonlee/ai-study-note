@@ -21,14 +21,21 @@
 * N개의 element를 검사하는 for-loop의 Time Complexity는 O(N)
 
 
-### Quiz 1
-> 정수를 담고 있는 배열의 평균값을 return하는 함수를 만들어보시오.
+### Quiz 1 : 정수를 담고 있는 배열의 평균값을 return하는 함수를 만들어보시오.
 
-'''python
+```python
 def average(list):
-    if len(list) == 0):
+    if len(list) == 0:
         return 0
     
     return sum(list) / len(list)
+```
+### Quiz 2 : 정수가 짝수일 경우 Even을 return하고 홀수일 경우 Odd를 return하는 함수를 만들어보시오.
 
-'''
+```python
+def eveOrOdd(num):
+    if (num % 2) == 0:
+        return "Even"
+    else:
+        return "Odd"
+```
