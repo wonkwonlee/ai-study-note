@@ -2,4 +2,4 @@
 * Variable
 * Constant
 
-Let $$y = ax + b$$, then 
+Let $y = ax + b$, then 
