@@ -7,7 +7,7 @@
 <summary><b>[Week 1] Data Structure and Algorithm </b></summary>   
 <div markdown="1">   
 
-+ [Complexity]()
++ [Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data%20Structure%20%26%20Algorithm/Complexity.md)
 
 </div>
 </details>
