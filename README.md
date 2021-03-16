@@ -30,7 +30,7 @@
 <summary><b>Introduction to Python</b></summary>  
 <div markdown="1">   
   
-+ [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Intro-to-Python/Function-and-Class.md)
++ [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Intro-to-Python/function-and-class.ipynb)
 
 </div>
 </details>
