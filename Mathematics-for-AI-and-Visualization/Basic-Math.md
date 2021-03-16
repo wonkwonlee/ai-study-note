@@ -45,8 +45,9 @@
 ## 거듭제곱과 거듭제곱근
 * 거듭제곱 : a를 p번 곱한 것을 a의 p제곱, 또는 a의 p승이라고 부르고, a^p 와 같이 표기한다
     + a를 밑, p를 지수라 한다
-* 거듭제곱근 : p제곱을 하면 a가 되는 수, 또는 p승을 하면 a가 되는 수를 a의 p제곱근이라 한다
-    + dd
+* 거듭제곱근 : p제곱을 하면 a가 되는 수, 또는 p승을 하면 a가 되는 수를 a의 p제곱근이라 하고 <img width="20" alt="sqrt" src="https://user-images.githubusercontent.com/28593767/111248845-10103200-864e-11eb-857a-b0b8f0b8b564.png"> 와 같이 표기한다
+
+<img width="555" alt="sqrt_eq" src="https://user-images.githubusercontent.com/28593767/111248702-c58eb580-864d-11eb-8fdd-e4c9171174b4.png">
 
 
 ## 지수함수와 로그함수
