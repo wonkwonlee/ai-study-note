@@ -62,7 +62,7 @@
 ## 지수함수와 로그함수 Exponential function and Logarithmic function
 > 지수함수란 지수에 변수를 사용하는 함수로 다음과 같다
 >
-> * a > 0, a != 1* 이라고 가정할 때, *y = a^x* 라고 표현되는 함수를 의미한다
+> *a > 0, a != 1* 이라고 가정할 때, *y = a^x* 라고 표현되는 함수를 의미한다
 
 * 지수함수는 **밑인 a가 1보다 큰지, 작은지에 따라** 그래프의 모양이 달라진다
 * *a > 1* 일 때 그래프는 오른쪽으로 올라가는 모양이고 *0 < a < 1* 일 때 그래프는 오른쪽으로 내려가는 모양이다
@@ -93,7 +93,6 @@
 
 ![log_func](https://user-images.githubusercontent.com/28593767/111300079-0b6e6c80-8694-11eb-990b-38fd98bcfbd5.png)
 
-
 ### 인공지능에서의 로그함수 Logarithm in AI
 * 인공지능에서는 **가능성을 나타내는 척도로 가능도(likelihood)라는 것을 이용**하는데, 이러한 가능도를 다루는 함수를 **가능도함수**라고 한다
 * 가능도함수는 확률을 계산하는 식과 같고 0 이상 1 이하의 값을 가지고 일반적으로 가능도의 로그를 사용한 **로그 가능도함수**를 많이 사용한다
@@ -102,13 +101,11 @@
 
 ## 자연로그 Natural Logarithm
 
-> Euler's number **e**
->
-> n의 값이 커질수록 (1+1/n)^2의 값은 일정한 값 2.7182... 에 가까워지고, 이 수를 Euler's number, Napier's constant, 또는 Base of Natural Logarithm이라 한다
->
-> *e*는 유용한 특징을 지니고 있는데, *d/dx(e^x) = e^x* 나 *ln x = 1/x* 과 같은 특징 등이다
+* Euler's number **e**
+* n의 값이 커질수록 (1+1/n)^2의 값은 일정한 값 2.7182... 에 가까워지고, 이 수를 Euler's number, Napier's constant, 또는 Base of Natural Logarithm이라 한다
+* *e*는 유용한 특징을 지니고 있는데, *d/dx(e^x) = e^x* 나 *ln x = 1/x* 과 같은 특징 등이다
 
-<!-- 자연로그 -->
+![ln](https://user-images.githubusercontent.com/28593767/111303303-b6345a00-8697-11eb-8b9a-d1c5d2fc0527.png)
 
 ## 절댓값과 유클리드 거리 Absolute value and Euclidean distance
 * 절댓값 Absolute value : 어떤 수와 0과의 수직선 상의 거리
@@ -118,30 +115,50 @@
     + 즉, n차원의 공간에서 두 점간의 거리를 알아내는 공식이다
     + 점 A와 원점 사이의 유클리드 거리는 ||*A*|| 라고 표현하고, 점 A와 점 B의 두 점 사이의 거리는 ||*A - B*|| 로 표현할 수 있다
 
-<!-- 유클리드 공식 -->
+<img width="500" alt="ed" src="https://user-images.githubusercontent.com/28593767/111303318-bcc2d180-8697-11eb-9dbb-10733f905750.png">
 
-## 수열
+## 수열 Sequence
+> 수열을 사용하면 여러 수를 쉽게 다룰 수 있기에 대량의 데이터를 처리하는 인공지능 분야에서는 수열을 자주 사용한다
+>
+> 수열이란, 여러 숫자가 일정한 규칙에 따라 줄지어서 배열된 것을 의미한다
+* 항 Term : 수열을 구성하는 숫자 하나하나
+* 초항 First term : 수열의 제 1항, a_1
+* 말항 Final term : 수열의 마지막 항, a_k
+
+### 등차수열 Arithmetic sequence
+> 앞, 뒤에 인접한 항과의 차이가 일정한 수열
+
+* 공차 Common difference : 등차수열에서 앞, 뒤 항과의 차이를 의미
+* 즉, 등차수열에서는 **어떤 항에 공차를 더하면 다음 항**을 알 수 있다
+* **등차수열의 일반항** : 초항이 a, 공차가 d일때 다음과 같이 정의한다 
+    + ![ar](https://user-images.githubusercontent.com/28593767/111304596-445d1000-8699-11eb-9638-efa6f1fd5a46.png)
+
+* **등차수열의 합 Arithmetic series** : 초항이 a, 말항이 l, 항의 개수는 n일때, 다음과 같이 정의한다
+    + ![ar_sum](https://user-images.githubusercontent.com/28593767/111304713-648ccf00-8699-11eb-8ef5-e50ab9ff3d07.png)
+
+### 등비수열 Geometric sequence
+> 앞, 뒤에 인접한 항의 비율이 일정한 수열
+
+* 공비 Ratio : 인접한 항의 비율, r로 표시한다
+* 즉, 등비수열에서는 **어떤 항에 공비를 곱하면 다음 항**을 알 수 있다
+* **등비수열의 일반항** : 초항이 a, 공비가 r일때 다음과 같이 정의한다 
+    + ![ge](https://user-images.githubusercontent.com/28593767/111305582-7f137800-869a-11eb-89cd-16369585d0db.png)
+* **등비수열의 합 Geometric series** : 초항이 a, 공비가 r일때, 다음과 같이 정의한다
+    + ![ge_sum](https://user-images.githubusercontent.com/28593767/111305578-7de24b00-869a-11eb-9108-23b08ae761b6.png)
+
+### 수열의 합과 곱 Summation and Product notation
+> 일반적으로 '시그마'와 '파이'라고 읽는다
+
+* ![sigma](https://user-images.githubusercontent.com/28593767/111305878-d9acd400-869a-11eb-95f2-222d6049cb8a.png)
+* ![sum_pro](https://user-images.githubusercontent.com/28593767/111306051-124cad80-869b-11eb-987b-8618d7bc1596.png)
+* 뉴런은 입력값과 가중치의 곱을 더하고 상수를 추가한 값과 같은데 신경망에서는 하나의 모델에 이와 같은 덧셈이 수백만번 이루어지기도 한다. 이 때, Summation을 써서 식을 간단히 표현 할 수 있다
 
 
-
-## 집합과 원소
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## 집합과 원소 Set and Element
+* 집합 Set : 같은 조건을 만족하는 원소들을 중복되지 않도록 모은 모둠
+    + 집합은 어떤 원소가 그 집합에 들어가느냐, 들어가지 않느냐를 정확하게 구분한다
+* 두 개의 집합 A, B가 있을 때 집합 A의 원소와 집합 B의 원소가 완전히 일치한다면 집합 A와 B는 같다고 하고 A = B 라고 표현한다
+* 집합 B의 모든 원소가 집합 A의 원소라면 집합 B는 집합 A의 부분집합(Subset)이라고 하고 A ⊂ B 라고 표현한다
+* 공집합(Empty set)은 원소가 하나도 없는 집합을 의미하고 φ 라고 표현한다
+* 두 개의 집합 A, B가 있을 때 집합 A와 집합 B, 모두에 속하는 원소가 있다면 이 원소들의 집합을 집합 A와 집합 B의 교집합(Intersection)이라 하고 A ∩ B와 같이 표기 합니다
+* 집합 A와 집합 B, 두 집합 중 적어도 한 집합에 속하는 원소가 있다면 이 원소들의 집합을 집합 A와 집합 B의 합집합(Union)이라 하고 A ∪ B와 같 이 표기합니다
