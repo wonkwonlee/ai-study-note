@@ -71,7 +71,10 @@
 
 ![func](https://user-images.githubusercontent.com/28593767/111254256-fa076f00-8657-11eb-8ec8-184478699e2e.png)
 
-<!-- 로그 부터 작성하면 됨-->
+<!-- 로그 부터 작성하면 됨
+
+기초 수학 Part 1 마무리 할 것
+-->
 
 
 ## 자연로그
