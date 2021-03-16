@@ -19,6 +19,7 @@
 <summary><b>Mathematics for AI and Visualization </b></summary>   
 <div markdown="1"> 
    
++ [Jupyter Notebook & Markdown](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Jupyter-and-Markdown.md)
 + [기초 수학 Basic Math](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Basic-Math.md)
   
 </div>
