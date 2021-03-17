@@ -10,7 +10,7 @@
 <div markdown="1">   
 
 * [복잡도 Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
-* [탐욕 알고리즘 Greedy Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/greedy_coin.ipynb)
+* [탐욕 알고리즘 Greedy Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/greedy.ipynb)
 
 </div>
 </details>
@@ -22,6 +22,7 @@
    
 * [Jupyter Notebook & Markdown](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Jupyter-and-Markdown.md)
 * [기초 수학 Basic Math](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Basic-Math.md)
+* [미분 Differential](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Differential.md)
 
 </div>
 </details>
