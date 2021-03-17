@@ -22,7 +22,7 @@
    
 * [Jupyter Notebook & Markdown](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Jupyter-and-Markdown.md)
 * [기초 수학 Basic Math](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Basic-Math.md)
-  
+
 </div>
 </details>
 
@@ -32,6 +32,7 @@
 <div markdown="1">   
   
 * [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Intro-to-Python/function-and-class.ipynb)
-
+* [데이터 처리 Pandas](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Intro-to-Python/pandas.ipynb)
+    
 </div>
 </details>
