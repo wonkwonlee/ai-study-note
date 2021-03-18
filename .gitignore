@@ -6,6 +6,6 @@
 .idea/inspectionProfiles/profiles_settings.xml
 .DS_Store
 /Data-Structure-and-Algorithm/.ipynb_checkpoints/
-/Intro-to-Python/.ipynb_checkpoints/
-.idea
+/Python-and-Data-Visualization/.ipynb_checkpoints/
+.idea/
 /venv/
