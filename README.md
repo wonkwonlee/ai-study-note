@@ -17,7 +17,7 @@
 
 
 <details>
-<summary><b>Mathematics for AI and Visualization </b></summary>   
+<summary><b>Mathematics for Machine Learning</b></summary>   
 <div markdown="1"> 
    
 * [Jupyter Notebook & Markdown](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Jupyter-and-Markdown.md)
@@ -31,7 +31,7 @@
 
 
 <details>
-<summary><b>Introduction to Python</b></summary>  
+<summary><b>Python and Data Visualization</b></summary>  
 <div markdown="1">   
   
 * [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Intro-to-Python/function-and-class.ipynb)
