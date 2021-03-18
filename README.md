@@ -24,7 +24,7 @@
 * [기초 수학 Basic Math](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Basic-Math.md)
 * [미분 Differential](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Differential.md)
 * [선형대수학 Linear Algebra](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Linear-Algebra.md)
-* [선형 회귀 Linear Regression](ttps://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Linear-Regression.md)
+* [선형 회귀 Linear Regression](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-AI-and-Visualization/Linear-Regression.md)
 
 </div>
 </details>
