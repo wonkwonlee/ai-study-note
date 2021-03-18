@@ -1,4 +1,4 @@
-# 멋쟁이사자처럼 K-Digital Training AI School
+# 멋쟁이사자처럼 K-Digital Training AI Study
 > [LikeLion] K-Digital Training Review Note
 > 
 > Since 2021.03.08 
