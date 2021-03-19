@@ -5,17 +5,6 @@
 
 ## Python and Math for AI
 
-<details>
-<summary><b>Data Structure and Algorithm</b></summary>   
-<div markdown="1">   
-
-* [복잡도 Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
-* [탐욕 알고리즘 Greedy Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/greedy.ipynb)
-* [예외 처리 Exception Handling](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/exception-handling.ipynb)
-
-</div>
-</details>
-
 
 <details>
 <summary><b>Mathematics for Machine Learning</b></summary>   
@@ -26,6 +15,18 @@
 * [미분 Differential](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-Machine-Learning/Differential.md)
 * [선형대수학 Linear Algebra](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-Machine-Learning/Linear-Algebra.md)
 * [선형 회귀 Linear Regression](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-Machine-Learning/Linear-Regression.md)
+
+</div>
+</details>
+
+
+<details>
+<summary><b>Data Structure and Algorithm</b></summary>   
+<div markdown="1">   
+
+* [복잡도 Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
+* [탐욕 알고리즘 Greedy Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/greedy.ipynb)
+* [예외 처리 Exception Handling](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/exception-handling.ipynb)
 
 </div>
 </details>
