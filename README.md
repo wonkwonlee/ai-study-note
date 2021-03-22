@@ -40,6 +40,7 @@
 * [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/function-and-class.ipynb)
 * [데이터 처리를 위한 Pandas](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/pandas.ipynb)
 * [데이터 시각화를 위한 Matplotlib](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/matplotlib.ipynb)
+* [텐서플로 Tensorflow](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tensorflow.ipynb)
 
 </div>
 </details>
