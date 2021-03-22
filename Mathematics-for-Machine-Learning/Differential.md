@@ -54,12 +54,12 @@
 -->
 
 
-## 합성함수의 미분 Differential of Composite function
+## 합성함수의 미분 Differential of Composite Function
 
 ### 합성 함수의 미분 공식
 ![comp](https://user-images.githubusercontent.com/28593767/111461453-9452da00-8760-11eb-8bde-5aadda390d59.png)
 
-### 연쇄 법칙 Chain rule 
+### 연쇄 법칙 Chain Rule 
 > 연쇄 법칙을 사용하면 임의의 식을 여러 개 끼워 넣어서 계산할 수 있다.
 
 ![comp2](https://user-images.githubusercontent.com/28593767/111461460-95840700-8760-11eb-9fa3-a3d597047e64.png)
@@ -72,9 +72,9 @@
 * 이렇게 편미분을 하는 과정에서 연쇄 법칙이 사용되고 이러한 일련의 기법을 **오차 역전파법**이라 한다.
 
 
-## 특수 함수의 미분
+## 특수 함수의 미분 Differential of Special Function
 
-### 시그모이드 함수
+### 시그모이드 함수 Sigmoid Function
 ![sig](https://user-images.githubusercontent.com/28593767/111466456-a9cb0280-8766-11eb-9d7f-d2efc6bc9f0e.png)
 
 ![sig_graph](https://user-images.githubusercontent.com/28593767/111466902-31b10c80-8767-11eb-8d72-5e13332847a3.png)
@@ -87,7 +87,7 @@
         - 이런 현상을 **기울기 소실 문제**라고 한다.
     + *따라서, 시그모이드는 역전파에 적합하지 않다.*
 
-### 시그모이드 함수의 미분
+### 시그모이드 함수의 미분 Differential of Sigmoid Function
 > 시그모이드 함수의 미분은 연쇄 법칙(Chain Rule)을 사용하여 구할 수 있다.
 
 <img width="1100" alt="diff_sig" src="https://user-images.githubusercontent.com/28593767/111458644-05908e00-875d-11eb-87b8-d721707b6585.png">
@@ -96,7 +96,7 @@
 
 ![sig2](https://user-images.githubusercontent.com/28593767/111466447-a768a880-8766-11eb-8e28-46ac8adf9329.png)
 
-### ReLU 함수 Rectified Linear Unit function
+### ReLU 함수 Rectified Linear Unit Function
 
 ![ReLU](https://user-images.githubusercontent.com/28593767/111467147-7472e480-8767-11eb-92bd-986b2f9e660d.png)
 

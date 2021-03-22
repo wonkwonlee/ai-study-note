@@ -9,7 +9,7 @@
     + 재미있는 점은 컴퓨터가 가중치를 학습할 때는 가중치가 *변수*의 역할을 하고, 학습이 끝나고 해당 가중치를 학습 모델에 활용할 때는 *상수*의 역할을 한다.
 
 
-## 1차식과 2차식 Linear equation and Quadratic equation
+## 1차식과 2차식 Linear Equation and Quadratic Equation
 * 항 Term : 숫자나 문자, 또는 그 둘의 곱으로 표현되는 식
     + 3, a, 3a, -4ab, x/3, a^2
 * 차수 Degree : 각각의 항에 변수가 곱해진 횟수
@@ -20,14 +20,14 @@
 * 다항식 Polynomial : 여러 개의 항이 더하기로 연결된 식
 
 
-* **Linear equation**, x에 대한 1차식 : *ax + b* (단, a != 0)
+* **Linear Equation**, x에 대한 1차식 : *ax + b* (단, a != 0)
     + 직선 모양
     + 계수 a는 직선의 기울기
     + b는 x = 0일 때의 y값 절편 (y-intercept)
 
 ![1st](https://user-images.githubusercontent.com/28593767/111255052-b01f8880-8659-11eb-8d2c-68f772c3ce9e.png)
 
-* **Quadratic equation**, x에 대한 2차식 : *ax^2 + bx + c* (단, a != 0)
+* **Quadratic Equation**, x에 대한 2차식 : *ax^2 + bx + c* (단, a != 0)
     + 포물선 모양
     + 계수 a가 양수이면 포물선이 아래로 볼록하고, a가 음수이면 위로 볼록하다.
 
@@ -42,7 +42,7 @@
 * 프로그래밍에서 말하는 함수는 수학에서 말하는 함수보다 개념이 확장되어 어떤 입력값에 대해 *True*나 *False*같은 형태나 문자열 같은 형태도 출력값으로 사용할 수 있다.
 
 
-## 제곱근 Square root
+## 제곱근 Square Root
 * 제곱을 했을 때 어떤 수 x가 되는 값을 그 어떤 수 x에 대한 제곱근이라 한다.
 * *a = b^2* 일 때, b를 a의 제곱근이라 하고 *b = sqrt(a)* 라고 표기한다.
 * 제곱근 기호를 *근호*라고 한다.
@@ -59,7 +59,7 @@
 <img width="555" alt="sqrt_eq" src="https://user-images.githubusercontent.com/28593767/111248702-c58eb580-864d-11eb-8fdd-e4c9171174b4.png">
 
 
-## 지수함수와 로그함수 Exponential function and Logarithmic function
+## 지수함수와 로그함수 Exponential Function and Logarithmic Function
 > 지수함수란 지수에 변수를 사용하는 함수로 다음과 같다.
 >
 > *a > 0, a != 1* 이라고 가정할 때, *y = a^x* 라고 표현되는 함수를 의미한다.
@@ -107,7 +107,7 @@
 
 ![ln](https://user-images.githubusercontent.com/28593767/111303303-b6345a00-8697-11eb-8b9a-d1c5d2fc0527.png)
 
-## 절댓값과 유클리드 거리 Absolute value and Euclidean distance
+## 절댓값과 유클리드 거리 Absolute Value and Euclidean Distance
 * 절댓값 Absolute value : 어떤 수와 0과의 수직선 상의 거리
     + 절댓값 기호 안에 있던 숫자나 문자가 양수라면 그대로 꺼낼 수 있지만, 음수라면 부호를 바꿔서 꺼내야 한다.
     + Modulus 라고도 한다.
@@ -125,7 +125,7 @@
 * 초항 First term : 수열의 제 1항, a_1
 * 말항 Final term : 수열의 마지막 항, a_k
 
-### 등차수열 Arithmetic sequence
+### 등차수열 Arithmetic Sequence
 > 앞, 뒤에 인접한 항과의 차이가 일정한 수열
 
 * 공차 Common difference : 등차수열에서 앞, 뒤 항과의 차이를 의미
@@ -133,7 +133,7 @@
 * **등차수열의 일반항** : 초항이 a, 공차가 d일때 다음과 같이 정의한다.
     + ![ar](https://user-images.githubusercontent.com/28593767/111304596-445d1000-8699-11eb-9638-efa6f1fd5a46.png)
 
-* **등차수열의 합 Arithmetic series** : 초항이 a, 말항이 l, 항의 개수는 n일때, 다음과 같이 정의한다.
+* **등차수열의 합 Arithmetic Series** : 초항이 a, 말항이 l, 항의 개수는 n일때, 다음과 같이 정의한다.
     + ![ar_sum](https://user-images.githubusercontent.com/28593767/111304713-648ccf00-8699-11eb-8ef5-e50ab9ff3d07.png)
 
 ### 등비수열 Geometric sequence
@@ -143,10 +143,10 @@
 * 즉, 등비수열에서는 **어떤 항에 공비를 곱하면 다음 항**을 알 수 있다.
 * **등비수열의 일반항** : 초항이 a, 공비가 r일때 다음과 같이 정의한다.
     + ![ge](https://user-images.githubusercontent.com/28593767/111305582-7f137800-869a-11eb-89cd-16369585d0db.png)
-* **등비수열의 합 Geometric series** : 초항이 a, 공비가 r일때, 다음과 같이 정의한다.
+* **등비수열의 합 Geometric Series** : 초항이 a, 공비가 r일때, 다음과 같이 정의한다.
     + ![ge_sum](https://user-images.githubusercontent.com/28593767/111305578-7de24b00-869a-11eb-9108-23b08ae761b6.png)
 
-### 수열의 합과 곱 Summation and Product notation
+### 수열의 합과 곱 Summation and Product Notation
 > 일반적으로 '시그마'와 '파이'라고 읽는다.
 
 * ![sigma](https://user-images.githubusercontent.com/28593767/111305878-d9acd400-869a-11eb-95f2-222d6049cb8a.png)

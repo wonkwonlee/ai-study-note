@@ -1,6 +1,6 @@
 # 인공지능 기초 Foundations of Artificial Intelligence
 
-## 인공지능과 머신러닝 그리고 딥러닝
+## 인공지능과 머신러닝 그리고 딥러닝 AI, Machine Learning and Deep Learning
 <img width="650" alt="ai" src="https://user-images.githubusercontent.com/28593767/111931293-45a99500-8afe-11eb-875a-884bfab3682c.png">
 
 * 인공지능은 사람의 지능과 비슷한 역할을 수행하는 소프트웨어를 의미한다.

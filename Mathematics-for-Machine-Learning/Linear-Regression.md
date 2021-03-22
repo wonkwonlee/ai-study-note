@@ -14,7 +14,7 @@
     + ![var](https://user-images.githubusercontent.com/28593767/111720795-f9621900-88a1-11eb-827a-d3203db9d33b.png)
 
 
-## 선형 회귀 모델 Linear Regression model
+## 선형 회귀 모델 Linear Regression Model
 ![lg_eq](https://user-images.githubusercontent.com/28593767/111720793-f830ec00-88a1-11eb-9f90-636d4b8528a5.png)
 
 ![lg_mat](https://user-images.githubusercontent.com/28593767/111720797-f9faaf80-88a1-11eb-90cc-ec1642e482b2.png)
@@ -41,7 +41,7 @@
 * 이렇게 모델식의 결과와 실제 데이터의 오차가 최소가 되게 만들면서 모델식의 가중치(계수)를 찾는 과정이 최소제곱법이다.
 
 
-## 모델식의 평가 Evaluation of model
+## 모델식의 평가 Evaluation of Model
 * 홀드아웃 교차 검증법 Holdout Cross Validation : **하나의 데이터 세트를 학습용 데이터와 테스트용 데이터로** 나눈 다음, 학습 데이터로 학습된 모델을 테스트 데이터로 검증하는 방법이다. 이러한 조정 과정을 **튜닝**이라고 한다.
 * k-분할 교차 검증법 k-fold Cross Validation : **데이터 세트를 k개로 분할한 다음, k번에 걸쳐** 학습 데이터와 테스트 데이터의 조합을 바꿔쓰는 방법이다. 
 
