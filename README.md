@@ -27,6 +27,7 @@
 * [복잡도 Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
 * [탐욕 알고리즘 Greedy Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/greedy.ipynb)
 * [예외 처리 Exception Handling](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/exception-handling.ipynb)
+* [스택과 큐 Stack and Queue](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Stack-and-Queue.md)
 
 </div>
 </details>
