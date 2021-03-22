@@ -41,6 +41,18 @@
 * [데이터 처리를 위한 Pandas](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/pandas.ipynb)
 * [데이터 시각화를 위한 Matplotlib](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/matplotlib.ipynb)
 
-    
 </div>
 </details>
+
+
+<details>
+<summary><b>Artificial Intelligence</b></summary>  
+<div markdown="1">   
+  
+* [인공지능 기초 Foundations of Artificial Intelligence](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Foundations-of-Artificial-Intelligence.md)
+    
+
+</div>
+</details>
+
+
