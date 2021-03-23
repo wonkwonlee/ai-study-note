@@ -88,11 +88,8 @@
     + ![pde_j](https://user-images.githubusercontent.com/28593767/112085505-00ed2f00-8bce-11eb-9c0c-3274981f825e.png)
 * j번째 매개변수의 갱신식은 다음과 같다.
     + ![theta_j](https://user-images.githubusercontent.com/28593767/112085507-00ed2f00-8bce-11eb-870c-9444c25710bb.png)
-
-
-
-
-
-
+* 이렇게 여러 개의 변수를 사용하는 것을 **다중회귀(Multiple Regression)** 라고 한다.
+* 다만 경사 하강법은 모든 학습 데이터의 개수만큼 반복해서 계산해야 한다는 점 때문에 학습 데이터가 많으면 많을수록 학습에 대한 시간을 많이 소모하게 된다는 단점이 있다.
+    + 이러한 경우를 극복하고자 이후 더 효율적인 다양한 기법이 등장한다.
 
 
