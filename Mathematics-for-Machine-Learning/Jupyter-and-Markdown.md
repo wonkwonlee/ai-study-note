@@ -14,7 +14,15 @@
     
     + Conda
 
-            Conda install -c conda-forge jupyter_contrib_nbextensions
+            conda install -c conda-forge jupyter_contrib_nbextensions
+
+* [JupyterThemes](https://github.com/dunovank/jupyter-themes) - Jupyter 테마 설정
+    + PIP
+
+            pip install jupyterthemes
+    + Conda
+
+            conda install -c conda-forge jupyterthemes
 
 * [Jupyter Notebook 유용한 팁들](https://john-analyst.medium.com/%EC%A3%BC%ED%94%BC%ED%84%B0-%EB%85%B8%ED%8A%B8%EB%B6%81%EC%9D%98-%EA%BF%80%ED%8C%81%EB%93%A4-4a40d406f07e) - Jupyter Notebook을 사용할 때 활용할만한 유용한 팁 모음
 
