@@ -33,6 +33,7 @@ for i in range(n):
 
 # print(graph); [[0, 0, 1, 1, 0], [0, 0, 0, 1, 1], [1, 1, 1, 1, 1], [0, 0, 0, 0, 0]]
 
+# Run DFS method for all graph nodes
 result = 0
 for i in range(n):
     for j in range(m):
