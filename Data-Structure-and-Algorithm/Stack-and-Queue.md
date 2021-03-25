@@ -76,7 +76,7 @@ queue.reverse()     # 다음 출력을 위해 역순으로 바꾸기
 print(queue)        # 나중에 들어온 원소부터 출력
 
 deque([3, 7, 1, 4])
-deque([4, 1, ,7, 3])
+deque([4, 1, 7, 3])
 ```
 
 
@@ -124,8 +124,8 @@ print("반복적으로 구현 :", factorial_iterative(5))
 print("재귀적으로 구현 :", factorial_recursive(5))
 
 # 결과값은 둘다 동일
-반복적으로 구현 : 120 
-재귀적으로 구현 : 120
+>> 반복적으로 구현 : 120 
+>> 재귀적으로 구현 : 120
 ```
 ![fac](https://user-images.githubusercontent.com/28593767/111928120-1b53d980-8af6-11eb-9062-909ce0864e31.png)
 
