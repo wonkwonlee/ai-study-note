@@ -18,7 +18,7 @@ N, M = map(int, input().split())
 # Map info in 2-D list
 graph = []
 
-# move directions
+# Move directions
 dx = [-1, 1, 0, 0]
 dy = [0, 0, -1, 1]
 
@@ -36,16 +36,16 @@ def bfs(x, y):
         x, y = queue.popleft()
 
         for i in range(4):
-            nx = x + dx[i]
-            ny = y + dy[i]
+            nx = x + dx[i]      # 0 + -1 / 0 + 1 / 0 + 0 / 0 + 0
+            ny = y + dy[i]      # 0 + 0 / 0 + 0 / 0 + -1 / 0 + 1
 
             # Ignore out of bound
             if nx < 0 or nx >= N or ny < 0 or ny >= M:
                 continue
-            # Ignore if current node is corner
+            # Ignore if current node is at the corner
             if graph[nx][ny] == 0:
                 continue
-            # Store the shortest path only if it is the first vist
+            # Store the shortest path only if it is the first visit (1)
             if graph[nx][ny] == 1:
                 # print((x,y), graph[x][y])
                 graph[nx][ny] = graph[x][y] + 1
@@ -54,5 +54,6 @@ def bfs(x, y):
     # Print graph with each cost
     # print(graph)  
     return graph[N-1][M-1]
-    
+
+# BFS method starting from (0,0)    
 print(bfs(0, 0))
