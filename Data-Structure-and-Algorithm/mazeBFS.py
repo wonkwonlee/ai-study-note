@@ -1,4 +1,4 @@
-'''
+"""
 Test Case
 5 6 
 101010
@@ -9,8 +9,8 @@ Test Case
 
 >> 10
 
-deque : double-endedd queue, which can handle data in both ends.
-'''
+deque : double-ended queue, which can handle data in both ends.
+"""
 from collections import deque
 
 # Length = N, Width = M
@@ -26,6 +26,7 @@ dy = [0, 0, -1, 1]
 for i in range(N):
     graph.append(list(map(int, input())))
 
+
 # BFS method
 def bfs(x, y):
     queue = deque()
@@ -36,8 +37,8 @@ def bfs(x, y):
         x, y = queue.popleft()
 
         for i in range(4):
-            nx = x + dx[i]      # 0 + -1 / 0 + 1 / 0 + 0 / 0 + 0
-            ny = y + dy[i]      # 0 + 0 / 0 + 0 / 0 + -1 / 0 + 1
+            nx = x + dx[i]  # 0 + -1 / 0 + 1 / 0 + 0 / 0 + 0
+            ny = y + dy[i]  # 0 + 0 / 0 + 0 / 0 + -1 / 0 + 1
 
             # Ignore out of bound
             if nx < 0 or nx >= N or ny < 0 or ny >= M:
@@ -53,7 +54,8 @@ def bfs(x, y):
 
     # Print graph with each cost
     # print(graph)  
-    return graph[N-1][M-1]
+    return graph[N - 1][M - 1]
 
-# BFS method starting from (0,0)    
+
+# BFS method starting from (0,0)
 print(bfs(0, 0))
