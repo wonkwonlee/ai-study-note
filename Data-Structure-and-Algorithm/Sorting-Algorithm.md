@@ -62,7 +62,7 @@ print(array)
 ```python
 array = [7, 5, 9, 8]
 
-for i in range(i, len(array)): 
+for i in range(1, len(array)): 
     # Decrease by 1 from i
     for j in range(i, 0, -1):       # print(j) -> 1 2 1 3 2 1
         # Swap the current value with previous value
@@ -78,5 +78,5 @@ print(array)
 > **range()** 의 변수는 start, end, step의 3개이고 *step에 -1이 들어가면 start 인덱스부터 end + 1 인덱스까지 1씩 감소*한다.
 
 ### 삽입 정렬의 시간 복잡도 Time Complexity of Insertion Sort
-<!-- 시간 복잡도 -->
+<!-- 시간 복잡 -->
 
