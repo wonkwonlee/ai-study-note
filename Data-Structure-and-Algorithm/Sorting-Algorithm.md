@@ -81,3 +81,140 @@ print(array)
     + 거의 정렬되어 있는 상태로 입력이 주어지는 문제의 경우 삽입 정렬을 이용하는 것이 적절하다.
 * 퀵 정렬과 비교했을 때 보통은 삽입 정렬이 비효율적이지만 정렬이 거의 되어 있는 상황에서는 더 강력하다.
 
+
+## 퀵 정렬 Quick Sort
+* 지금까지 배운 정렬 알고리즘 중에 *가장 많이 사용되는 정렬 알고리즘으로 대부분 프로그래밍 언어에서 정렬 라이브러리의 근간*이 되는 알고리즘이다.
+    + 퀵 정렬 비교할 만큼 빠른 알고리즘에는 **병합 정렬(Merge Sort)** 알고리즘이 있다.
+* 퀵 정렬은 **기준 데이터를 설정한 다음 큰 수와 작은 수를 교환한 후 리스트를 반으로 나누는 방식**이다.
+* 퀵 정렬에서 큰 숫자와 작은 숫자를 교환하기 위한 기준을 **피벗**이라고 한다.
+    + 피벗을 설정하고 리스트를 분할하는 방법에 따라서 여러 방식이 있는데 가장 대표적인 분할 방식으로는 **호어 분할 방식**이 있다.
+
+### 호어 분할 방식을 이용한 퀵 정렬
+1. 리스트에서 첫 번째 데이터를 피벗으로 삼는다.
+2. 피벗을 설정한 뒤에는 *왼쪽에서 부터 피벗보다 큰 데이터*를 찾고, *오른쪽에서 부터 피벳보다 작은 데이터*를 찾는다. 
+3. 그 후 큰 데이터와 작은 데이터의 위치를 서로 교환한다. 
+4. 이러한 과정을 반복하면 피벗에 대하여 정렬이 수행된다.
+5. 현재 왼쪽에서부터 찾는 큰 값과 오른쪽에서부터 찾는 작은 값의 위치가 서로 엇갈리는 경우 *작은 데이터와 피벗의 위치를 서로 변경*한다.
+6. 이렇게 피벗의 왼쪽에는 피벗보다 작은 데이터가 위치하고, 피벗의 오른쪽에는 피벗보다 큰 데이터가 위치하도록 하는 작업 **분할 혹은 파티션(Partition)** 이라고 한다.
+7. 이러한 상태에서 왼쪽 리스트와 오른쪽 리스트를 개별적으로 정렬한다. (재귀 함수)
+
+<img width="1281" alt="quick_1" src="https://user-images.githubusercontent.com/28593767/112918003-d99ee080-913e-11eb-939d-8a2051626a88.png">
+
+<img width="1281" alt="quick_2" src="https://user-images.githubusercontent.com/28593767/112918007-dc99d100-913e-11eb-9b8f-bbd2ffdc06a4.png">
+
+<img width="1281" alt="quick_3" src="https://user-images.githubusercontent.com/28593767/112918008-dd326780-913e-11eb-9de3-cb99e9aa9712.png">
+
+```python
+array=[5,7,9,0,3,1,6,2,4,8]
+
+# Quick Sort algorithm
+def quick_sort(array, start, end):
+    # If a element is 1, nothing happens
+    if start >= end :   
+        return
+    pivot = start       # Pivot is the first element
+    left = start + 1    # Left pointer is one after pivot 
+    right = end         # Right pointer is the end
+
+    # While-loop if left is smaller or equal to right
+    while left <= right:
+        # Find a larger value than pivot
+        while left <= end and array[left] <= array[pivot]:
+            left += 1
+        # Find a smaller value than pivot
+        while right > start and array[right] >= array[pivot]:
+            right -= 1
+        # If left and right pointers cross, swap pivot and smaller element
+        if left > right :
+            array[right], array[pivot] = array[pivot], array[right]
+        # If pointers do not cross, swap smaller and larger element
+        else:
+            array[left], array[right] = array[right], array[left]
+    # After partition, recursion on left and right side of new pivot 
+    quick_sort(array, start, right - 1) 
+    quick_sort(array, right + 1, end)
+  
+
+quick_sort(array, 0, len(array) - 1) 
+print(array)
+
+>> [0,1,2,3,4,5,6,7,8,9]
+```
+
+```python
+array=[5,7,9,0,3,1,6,2,4,8]
+
+# Quick Sort algorithm in pythonic way
+def quick_sort(array):
+    # If a element is 1, nothing happens 
+    if len(array) <= 1:
+        return array
+
+    pivot = array[0]    # Pivot is the first element
+    tail = array[1:]    # List except pivot
+
+    # Partition left and right sides 
+    left_side = [x for x in tail if x <= pivot] 
+    right_side = [x for x in tail if x > pivot]
+
+    # After partition, use recursion on left and right side of new pivot
+    # Return a list of left side, pivot, and right side
+    return quick_sort(left_side) + [pivot] + quick_sort(right_side) 
+
+  
+print(quick_sort(array))
+
+>> [0,1,2,3,4,5,6,7,8,9]
+```
+
+
+### 퀵 정렬의 시간 복잡도
+
+
+
+## 계수 정렬 Counting Sort
+* 계수 정렬은 특정한 조건이 부합할 때만 사용할 수 있는 매우 빠른 정렬 알고리즘으로 매우 간단하게 구현될 수 있다.
+* 계수 정렬은 **데이터의 크기 범위가 제한되어 정수 형태로 표현할 수 있을 때만 사용**할 수 있다.
+    + 데이터의 값이 무한한 범위를 가질 수 있다는 실수형 데이터가 주어지는 경우 계수 정렬은 사용하기 어렵다. 
+    + 일반적으로 가장 큰 데이터와 가장 작은 데이터의 차이가 1,000,000을 넘지 않을 때 효율적이다.
+    + 예를 들어 0이상 100 이하인 성적 데이터를 정렬할 때 계수 정렬이 효과적이다.
+* 계수 정렬을 이용할 때는 모든 범위를 담을 수 있는 크기의 리스트를 선언해야 한다.
+    + 계수 정렬은 일반적으로 별도의 리스트를 선언하고 그 안에 정렬에 대한 정보를 담는다는 특징이 있다.
+    + 데이터의 크기가 제한되어 있을 때에 한해서 데이터의 개수가 매우 많더라도 빠르게 동작한다.
+
+### 계수 정렬 알고리즘
+1. 먼저 가장 큰 데이터와 가장 작은 데이터의 범위가 모두 담길 수 있도록 하나의 리스트를 생성한다.
+2. 처음에는 리스트의 모든 데이터가 0이 되도록 초기화 한다. 
+3. 마지막으로 데이터를 하나씩 확인하며 데이터의 값과 동일한 인덱스의 데이터를 1씩 증가시키면 계수 정렬이 완료된다.
+4. 결과적으로 리스트에는 각 데이터가 몇 번 등장했는지 그 횟수가 기록되고 이 리스트에 저장된 데이터 자체가 정렬된 형태 그 자체라고 할 수 있다.
+
+
+```python
+# Assume all element >= 0
+array = [7, 5, 9, 0, 3, 1, 6, 2, 9, 1, 4, 8, 0, 5, 2] 
+
+# Count array includes every element of the original array (Initialize with 0)
+count = [0] * (max(array) + 1)
+
+for i in range(len(array)):
+    # Increase the number of frequency for each value
+    count[array[i]] += 1 # 각 데이터의 해당하는 인덱스의 값 증가
+
+# For all elements in the list
+for i in range(len(count)): 
+    # For the number of each frequency 
+    for j in range(count[i]):
+        # Print sorted values
+        print(i, end = ' ')
+
+>> 0 0 1 1 2 2 3 4 5 5 6 7 8 9 9      
+```
+
+* 계수 정렬은 렬 알고리즘과는 다르며, 동일한 값을 가지는 데이터가 여러 개 등장할 때 적합하다. 
+    + 예를 들어 성적을 비교할 경우 100점을 맞은 학생이 여러 명일 수 있기 때문에 계수 정렬이 효과적이다. 
+* 반면에 앞서 설명한 퀵 정렬은 일반적인 경우에서 평균적으로 빠르게 동작하기 때문에 데이터의 특성을 파악하기 어렵다면 퀵 정렬을 이용하는게 유리하다.
+* 즉, **계수 정렬은 데이터의 크기가 많이 중복되어 있을수록 유리**하며 항상 사용할 수는 없지만 조건만 만족하다면 계수 정렬은 *정렬해야 하는 데이터의 개수가 매우 많을 때에도 효과적으로 사용*할 수 있습니다.
+
+
+
+
