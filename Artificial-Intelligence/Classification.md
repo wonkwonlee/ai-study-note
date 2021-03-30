@@ -65,11 +65,50 @@
 
 * 경기 결과에 관한 엔트로피는 1.006, 각 교차 엔트로피는 1.032, 1.053으로 *엔트로피값에 더 수렴한 이즈리얼이 더 정확하게 예측을 수행*했다.
 
-
 ### 딥러닝에서의 교차 엔트로피
 * 딥러닝 모델의 추정 확률 분포 Q, 그리고 미지의 확률 분포 P에 대해서 교차 엔트로피를 계산하고 이 교차 엔트로피가 낮아지는 쪽으로 모델의 추정 확률 분포 Q를 꾸준히 개선함으로 확률 분포 Q를 확률 분포 P에 가깝게 접근시켜 갈 수 있다.
 * 이것이 **이진 판단에서의 신경망을 학습시킬 수 있는 원리**가 된다.
 
 
+## 시그모이드 함수와 교차 엔트로피의 편미분
+* 이진 판단 문제에 대한 정답으로 z가 주어질 때 데이터의 결과가 참일 확률은 *P_T = z*, 거짓일 확률은 *P_F = 1 - z* 라고 표현할 수 있다.
+* 어떠한 데이터에 대해 신경망 회로의 출력 t가 로짓값 x로 계산되었다고 할 때 신경망 예측에 대한 확률값은 *Q_T = σ(x)* 그리고 *Q_F = 1 - σ(x)*로 표현할 수 있다.
+* 이 때 교차 엔트로피의 정의식 *H(P, Q)* 에 위 확률값들을 대입하면 H는 다음과 같다.
+    + <img width="673" alt="cross" src="https://user-images.githubusercontent.com/28593767/112924916-f392f000-914b-11eb-9d36-e938211b0e17.png">
+* 정리한 교차 엔트로피에 시그모이드 함수 *σ(x) = 1/(1+e^-x)* 를 대입하면 다음과 같다.
+    + <img width="584" alt="cross2" src="https://user-images.githubusercontent.com/28593767/112924921-f4c41d00-914b-11eb-9d5e-cb55882915fb.png">
+* 일반적으로 *이진 판단 문제의 정답값은 0 혹은 1*이므로 실제 정답 z에 0과 1을 대입하면 다음과 같다.
+    + <img width="565" alt="cross3" src="https://user-images.githubusercontent.com/28593767/112924931-f68de080-914b-11eb-823c-9380c6b5d78f.png">
+* 마지막으로 이진 분류 신경망의 학습을 위해 시그모이드 함수에 대한 교차 엔트로피의 편미분을 구하면 다음과 같다 (z는 편미분이기에 상수로 취급).
+    + <img width="574" alt="cross4" src="https://user-images.githubusercontent.com/28593767/112924934-f7267700-914b-11eb-99d9-ae1687d8ae27.png">
+
+
+### 오버플로우 Overflow
+```python
+import numpy as np
+
+def sigmoid_A(x):
+    y = 1.0 / 1.0 + (np.exp(-x)) 
+    print(y)
+
+x = -1000
+sigmoid_A(x)
+>> inf
+>> /usr/local/lib/python3.6/dist-packages/ipykernel_launcher.py:4: RuntimeWarning: overflow encountered in exp after removing the cwd from sys.path.
+```
+
+* 파이썬을 활용해 시그모이드 함수를 돌리다보면 종종 **오버플로우 문제**가 발생한다.
+* 입력값 x에 큰 음수가 들어오는 경우 경고가 발생하고 학습이 종료될 수 도 있다.
+    + 반면 큰 음수값이 아닌 큰 양수값이 들어오는 경우에는 결괏값이 정상적으로 출력된다.
+* 이러한 오버플로우 문제를 방지하기 위해서는 시그모이드 함수의 *분자와 분모에 e^x를 곱해 식을 재정의*하는 것으로 해결할 수 있다.
+    + <img width="290" alt="over_sig" src="https://user-images.githubusercontent.com/28593767/112924991-12918200-914c-11eb-92c5-42cd9c2f4bd8.png">
+* 시그모이드 함수의 교차 엔트로피 함수 역시 입력값에 큰 음수가 들어오는 경우 inf 출력 및 오버플로우 문제가 발생한다.
+    + 마찬가지로 식을 정리해서 해결할 수 있다.
+    + <img width="1129" alt="over_cross" src="https://user-images.githubusercontent.com/28593767/112924995-13c2af00-914c-11eb-8ce7-eb43833644c3.png">
+
+* 입력값을 양수식과 음수식에 따라 나눠 대입하는 것은 처리 과정이 너무 복잡하기 때문에 양수식과 음수식을 합쳐 새로운 식을 만들면 다음과 같다.
+    + <img width="637" alt="new_eq" src="https://user-images.githubusercontent.com/28593767/112925001-158c7280-914c-11eb-872a-05087e3b3a27.png">
+    + 새로운 수식은 음수값과 양수값 모두 대응이 가능하고, 이 변형된 수식과 기존 수식에 대하여 같은 값으로 음수, 양수, 0을 대입하면 모두 같은 값이 나온다.
+        - <img width="918" alt="eq_ex" src="https://user-images.githubusercontent.com/28593767/112925020-2341f800-914c-11eb-8dde-d1f68bb54e83.png">
 
 
