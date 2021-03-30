@@ -3,6 +3,7 @@
 > 
 > Since 2021.03.08 
 
+
 ## Mathematics for Machine Learning
 * [Jupyter Notebook & Markdown](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-Machine-Learning/Jupyter-and-Markdown.md)
 * [기초 수학 Foundations of Mathematics](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Mathematics-for-Machine-Learning/Foundations-of-Mathematics.md)
@@ -13,6 +14,7 @@
 
 
 ## Data Structure and Algorithm
+* [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/function-and-class.ipynb)
 * [복잡도 Complexity](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Complexity.md)
 * [탐욕 알고리즘 Greedy Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/greedy.ipynb)
 * [예외 처리 Exception Handling](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/exception-handling.ipynb)
@@ -22,8 +24,15 @@
 
 
 
-## Python and Data Visualization
-* [함수와 클래스 Function and Class](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/function-and-class.ipynb)
+## Artificial Intelligence and Machine Learning
+* [인공지능 기초 Foundations of Artificial Intelligence](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Foundations-of-Artificial-Intelligence.md)
+* [단층 퍼셉트론 Single-Layer Perceptron](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Single-Layer-Perceptron.md)
+* [회귀 분석 Regression Analysis](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Regression-Analysis.md)
+* [분류 Classification](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Classification.md)
+
+
+
+## Data Visualization
 * [데이터 처리를 위한 Pandas](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/pandas.ipynb)
 * [데이터 시각화를 위한 Matplotlib](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/matplotlib.ipynb)
 * [텐서플로 Tensorflow](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tensorflow.ipynb)
@@ -32,8 +41,3 @@
 * [텐서플로 허브 Tensorflow Hub](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tensorflow-hub.ipynb)
 
 
-## Artificial Intelligence
-* [인공지능 기초 Foundations of Artificial Intelligence](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Foundations-of-Artificial-Intelligence.md)
-* [단층 퍼셉트론 Single-Layer Perceptron](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Single-Layer-Perceptron.md)
-* [회귀 분석 Regression Analysis](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Regression-Analysis.md)
-* [분류 Classification](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Classification.md)
