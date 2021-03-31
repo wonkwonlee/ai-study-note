@@ -1,5 +1,4 @@
-₩# 정렬 알고리즘 Sorting Algorithm
-
+# 정렬 알고리즘 Sorting Algorithm
 
 ## 정렬 Sort
 * 정렬이란 **데이터를 특정한 기준에 따라서 순서대로 나열하는 것**을 말한다. 
