@@ -1,5 +1,8 @@
 """
 Quick Sort in Reverse
+
+list.sort() : Affect the original. Return None.
+sorted(list) : Do not affect the original. Return a new list.
 """
 
 
@@ -22,4 +25,5 @@ n = int(input())
 for i in range(n):
     num.append(int(input()))
 
-print(quick_reverse(num))
+for i in quick_reverse(num):
+    print(i, end = " ")

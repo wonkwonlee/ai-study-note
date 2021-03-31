@@ -1,5 +1,10 @@
 """
-성적 정렬 프로그램
+Transcript Sorting program
+
+# Lambda function : Anonymous function expression
+lambda argument : result
+
+(lambda x : x + 1)(3) >> 4
 """
 
 n = int(input())    # Input size
@@ -19,3 +24,20 @@ for x in sorted_grade:
     sorted_name.append(dic[x])
 
 print(sorted_name)
+
+
+# Example code
+n = int(input())
+
+array = []
+for i in range(n):
+    input_data = input().split()
+    # Store name as str and grade as int
+    array.append((input_data[0], int(input_data[1])))
+
+# Lambda function - use key to sort by grade(student[1])
+array = sorted(array, key=lambda student: student[1])
+
+# Counting sort
+for student in array:
+    print(student[0], end=' ')
