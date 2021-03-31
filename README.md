@@ -30,6 +30,7 @@
 * [단층 퍼셉트론 Single-Layer Perceptron](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Single-Layer-Perceptron.md)
 * [회귀 분석 Regression Analysis](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Regression-Analysis.md)
 * [분류 Classification](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Classification.md)
+* [다층 퍼셉트론 Multi-Layer Perceptron](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Artificial-Intelligence/Multi-Layer-Perceptron.md)
 
 
 
