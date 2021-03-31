@@ -194,7 +194,7 @@ def eval_accuracy(output,y):
 * 이러한 성질 때문에 벡터 성분 간의 편미분이 일대일 혹은 다대일의 구조가 아닌 **다대다**의 관계가 되면서 편미분 과정이 상당히 복잡하다.
     + 다행히 이러한 소프트맥스의 편미분 계산 과정은 딥러닝 학습에 거의 이용되지 않는다.
 
-### 소프트맥스 교차 엔트로피 Softmax Cross Entropy
+## 소프트맥스 교차 엔트로피 Softmax Cross Entropy
 <img width="296" alt="ce1" src="https://user-images.githubusercontent.com/28593767/113092541-252db900-9229-11eb-87ef-4c2219184cda.png">
 
 * 교차 엔트로피의 수식에서 신경망의 추론 부분인 *Q*는 로짓 벡터에 소프트맥스 함수를 적용한 결과이기에 확률의 형태로 값이 출력되며 모든 원소값이 항상 0보다 크고 1보다 작은값을 갖는다.
@@ -204,5 +204,7 @@ def eval_accuracy(output,y):
 <img width="577" alt="ce2" src="https://user-images.githubusercontent.com/28593767/113092545-265ee600-9229-11eb-84a3-fdba33f059b7.png">
 
 * ε을 넣어 계산을 진행하면 어지히 큰 q_i 값에 대해서는 아주 작은 차이를 주고, 반대로 0에 매우 가까운 q_i 값은 일정 값으로 내려가지 못하게 하한선 역할을 수행하여 오류를 방지할 수 있다.
+
+
 
 
