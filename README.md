@@ -21,6 +21,7 @@
 * [스택과 큐 Stack and Queue](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Stack-and-Queue.md)
 * [깊이 우선 탐색과 너비 우선 탐색 DFS and BFS](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/DFS-and-BFS.md)
 * [정렬 알고리즘 Sorting Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Sorting-Algorithm.md)
+* [탐색 알고리즘 Search Algorithm](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Data-Structure-and-Algorithm/Search-Algorithm.md)
 
 
 
