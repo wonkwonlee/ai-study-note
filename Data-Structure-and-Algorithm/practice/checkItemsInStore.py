@@ -3,4 +3,5 @@ n = int(input())
 store, request = [], []
 
 for i in range(n):
-    store.append(int(input()))
+    input_data = int(input().split())
+    store.append(input_data)
