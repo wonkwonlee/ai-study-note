@@ -111,7 +111,12 @@ sigmoid_A(x)
     + 새로운 수식은 음수값과 양수값 모두 대응이 가능하고, 이 변형된 수식과 기존 수식에 대하여 같은 값으로 음수, 양수, 0을 대입하면 모두 같은 값이 나온다.
         - <img width="918" alt="eq_ex" src="https://user-images.githubusercontent.com/28593767/112925020-2341f800-914c-11eb-8dde-d1f68bb54e83.png">
 
-
+```python
+def sigmoid(x):
+  return np.exp(-np.maximum(-x, 0)) / 1.0 + np.exp(-np.abs(x))
+```
+  
+  
 ## 정확도 계산 함수
 ```python
 def eval_accuracy(output,y):
@@ -189,6 +194,16 @@ def eval_accuracy(output,y):
 * 오버플로우 문제를 해결하기 위해서 *x_i* 의 최댓값을 *x_k* 라 할 때 소프트맥스 정의식에서 분자와 분모를 동시에 *e^xk* 로 나누는 방법이 쓰인다.
 * 이로써, 분자와 분모의 어느 항도 지나치게 커질 수 없게 되며 자연스럽게 오버플로우 문제가 사라지게 된다.
 
+```python
+def softmax(arr):
+    max_val = np.max(arr)           # Max value
+    exp_arr = np.exp(arr - max_val) # Prevent overflow 
+    y = exp_arr / np.sum(exp_arr)
+
+    return y
+
+```
+
 ### 소프트맥스 함수의 편미분
 * 소프트맥스 함수는 벡터를 입력으로 받아 벡터를 출력하게 된다.
 * 이러한 성질 때문에 벡터 성분 간의 편미분이 일대일 혹은 다대일의 구조가 아닌 **다대다**의 관계가 되면서 편미분 과정이 상당히 복잡하다.
@@ -204,6 +219,7 @@ def eval_accuracy(output,y):
 <img width="577" alt="ce2" src="https://user-images.githubusercontent.com/28593767/113092545-265ee600-9229-11eb-84a3-fdba33f059b7.png">
 
 * ε을 넣어 계산을 진행하면 어지히 큰 q_i 값에 대해서는 아주 작은 차이를 주고, 반대로 0에 매우 가까운 q_i 값은 일정 값으로 내려가지 못하게 하한선 역할을 수행하여 오류를 방지할 수 있다.
+
 
 
 
