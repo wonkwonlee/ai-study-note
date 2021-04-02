@@ -42,5 +42,4 @@
 * [텐서플로 회귀 Tensorflow Regression](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tf-regression.ipynb)
 * [텐서플로 분류 Tensorflow Classification](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tf-classification.ipynb)
 * [텐서플로 허브 Tensorflow Hub](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tensorflow-hub.ipynb)
-
-
+* [텐서플로 전이학습 Tensorflow Transfer Learning](https://github.com/wonkwonlee/likelion-k-digital-training-AI/blob/main/Python-and-Data-Visualization/tensorflow-transfer-learning.ipynb))
