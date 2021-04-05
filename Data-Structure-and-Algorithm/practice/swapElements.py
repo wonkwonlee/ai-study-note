@@ -23,9 +23,11 @@ array_B.sort()                              # [5,5,5,6,6]
 
 # From i=0 to K-1
 for i in range(K):
-    # Swap min values in array_A with max values in array_B
-    array_A[i], array_B[-i-1] = array_B[-i-1], array_A[i]
-
+    if array_A[i] < array_B[-i-1]
+        # Swap min values in array_A with max values in array_B
+        array_A[i], array_B[-i-1] = array_B[-i-1], array_A[i]
+    else:
+        break
 # Check array_A and array_B after swap operations
 # print(array_A)                            # [6,6,5,4,5]
 # print(array_B)                            # [5,5,3,2,1]
