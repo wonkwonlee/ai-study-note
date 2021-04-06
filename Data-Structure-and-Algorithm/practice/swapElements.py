@@ -9,6 +9,8 @@ N = 5, K = 3
 A = [1,2,5,4,3]
 B = [5,5,6,6,5]
 >> 26 (A = [6,6,5,4,5] after swap operations)
+
+# Swap Operation
 """
 
 # N is the length of arrays, K is the maximum swap operations
@@ -23,7 +25,7 @@ array_B.sort()                              # [5,5,5,6,6]
 
 # From i=0 to K-1
 for i in range(K):
-    if array_A[i] < array_B[-i-1]
+    if array_A[i] < array_B[-i-1]:
         # Swap min values in array_A with max values in array_B
         array_A[i], array_B[-i-1] = array_B[-i-1], array_A[i]
     else:

@@ -1,3 +1,8 @@
+"""
+# Binary Search
+"""
+
+
 def height_search(array, nums, target, start, end):
     # Binary search middle index
     mid = (start + end) // 2
@@ -25,7 +30,7 @@ rice_cake = list(map(int, input().split()))
 
 # Initialize a list to store height from 0 to max value
 heights = [x for x in range(max(rice_cake) + 1)]
-# Find the
+# Find the target height
 target_height = height_search(rice_cake, heights, m, min(heights), max(heights))
 
 print(target_height)

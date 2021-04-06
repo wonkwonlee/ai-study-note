@@ -9,7 +9,6 @@ Input:   N number of food storages
          
 Output:  Maximum food available
 
-
 # Example
 4
 1 3 1 5
@@ -18,6 +17,8 @@ Output:  Maximum food available
 10
 1 3 7 12 8 4 9 10 4 3
 >>32
+
+# Dynamic Programming
 """
 # Number of food storage
 n = int(input())

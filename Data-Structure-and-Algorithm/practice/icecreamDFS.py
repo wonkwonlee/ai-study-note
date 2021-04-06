@@ -1,10 +1,12 @@
 """
-Test Case
+Test case
 4 5
 00110
 00011
 11111
 00000
+
+# DFS
 """
 
 
@@ -33,7 +35,8 @@ graph = []
 for i in range(n):
     graph.append(list(map(int, input())))
 
-# print(graph); [[0, 0, 1, 1, 0], [0, 0, 0, 1, 1], [1, 1, 1, 1, 1], [0, 0, 0, 0, 0]]
+# print(graph)
+# [[0, 0, 1, 1, 0], [0, 0, 0, 1, 1], [1, 1, 1, 1, 1], [0, 0, 0, 0, 0]]
 
 # Run DFS method for all graph nodes
 result = 0

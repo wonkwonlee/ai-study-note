@@ -1,3 +1,8 @@
+"""
+Sequential Search
+"""
+
+
 def sequential_search(target, array):
     # From 0 to length of array
     for i in range(len(array)):

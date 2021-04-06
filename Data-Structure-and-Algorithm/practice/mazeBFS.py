@@ -1,15 +1,16 @@
 """
-Test Case
+deque : double-ended queue, which can handle data in both ends.
+
+# Example
 5 6 
 101010
 111111
 000001
 111111
 111111
-
 >> 10
 
-deque : double-ended queue, which can handle data in both ends.
+# BFS
 """
 from collections import deque
 

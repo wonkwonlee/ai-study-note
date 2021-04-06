@@ -10,6 +10,9 @@ Find the minimum operations to return output.
 # Example
 26 
 >> 3 (26 - 1, 25 / 5, 5 / 5)
+
+
+# Dynamic Programming
 """
 
 

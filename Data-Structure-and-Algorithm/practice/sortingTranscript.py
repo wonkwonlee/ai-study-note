@@ -5,6 +5,8 @@ Transcript Sorting program
 lambda argument : result
 
 (lambda x : x + 1)(3) >> 4
+
+# Sorting algorithm
 """
 
 n = int(input())    # Input size
