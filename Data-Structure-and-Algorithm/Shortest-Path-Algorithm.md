@@ -153,25 +153,31 @@ OUTPUT
 * 점화식을 풀어보면 **A에서 B로 가는 최소 비용(D_ab)과 A에서 K를 거쳐 B로 가는 비용(D_ak + D_kb) 을 비교하여 더 작은 값으로 갱신**한다는 의미이다.
 * 즉, *바로 이동하는 거리가 특정한 노드를 거쳐서 이동하는 거리보다 더 많은 비용을 가진다면 이를 더 짧은 것으로* 갱신한다.
 
-![step0](https://user-images.githubusercontent.com/28593767/113955677-2c6f4b00-9857-11eb-8aff-475d2a6d6810.png)
 > Step 0: 초기 테이블 설정
 
-![step1](https://user-images.githubusercontent.com/28593767/113955678-2d07e180-9857-11eb-89c0-5fbd669b9be5.png)
-> Step 1: 1번 노드를 거쳐 가는 경우
+![step0](https://user-images.githubusercontent.com/28593767/113955677-2c6f4b00-9857-11eb-8aff-475d2a6d6810.png)
 
-![step2](https://user-images.githubusercontent.com/28593767/113955681-2e390e80-9857-11eb-8bbe-7212b34cd807.png)
+> Step 1: 1번 노드를 거쳐 가는 경우 
+
+![step1](https://user-images.githubusercontent.com/28593767/113955678-2d07e180-9857-11eb-89c0-5fbd669b9be5.png)
+
 > Step 2: 2번 노드를 거쳐 가는 경우
 
-![step3](https://user-images.githubusercontent.com/28593767/113955682-2ed1a500-9857-11eb-8864-c97d228e14ce.png)
+![step2](https://user-images.githubusercontent.com/28593767/113955681-2e390e80-9857-11eb-8bbe-7212b34cd807.png)
+
 > Step 3: 3번 노드를 거쳐 가는 경우
 
-![step4](https://user-images.githubusercontent.com/28593767/113955683-2f6a3b80-9857-11eb-8af0-2fec8dcc51b3.png)
+![step3](https://user-images.githubusercontent.com/28593767/113955682-2ed1a500-9857-11eb-8864-c97d228e14ce.png)
+
 > Step 4: 4번 노드를 거쳐 가는 경우
 
-![step_final](https://user-images.githubusercontent.com/28593767/113956423-62f99580-9858-11eb-9a9a-5d8ee1f0e9a8.png)
+![step4](https://user-images.githubusercontent.com/28593767/113955683-2f6a3b80-9857-11eb-8af0-2fec8dcc51b3.png)
+
 > 모든 노드의 최단 거리 테이블
 >
-> 예를 들어 D_13 (첫 번째 행, 세 번째 열)의 값은 8인데, 이는 1번 노드에서 3번 노드로 가는 최단 거리가 8이라는 의미이다.
+> 예를 들어 D_13의 값은 8인데, 이는 1번 노드에서 3번 노드로 가는 최단 거리가 8이라는 의미이다.
+
+![step_final](https://user-images.githubusercontent.com/28593767/113956423-62f99580-9858-11eb-9a9a-5d8ee1f0e9a8.png)
 
 
 
