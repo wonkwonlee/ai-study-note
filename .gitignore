@@ -1,4 +1,4 @@
-
+.idea/
 .idea/vcs.xml
 .idea/modules.xml
 .idea/misc.xml
@@ -11,5 +11,4 @@
 /Artificial-Intelligence/.ipynb_checkpoints/
 /Artificial-Intelligence/Code/.ipynb_checkpoints/
 /Artificial-Intelligence/data_nn/flowers/
-.idea/
 /venv/
