@@ -44,5 +44,5 @@
 * [텐서플로 Tensorflow](./Python-and-Data-Visualization/tensorflow.ipynb)
 * [텐서플로 회귀 Tensorflow Regression](./Python-and-Data-Visualization/tf-regression.ipynb)
 * [텐서플로 분류 Tensorflow Classification](./Python-and-Data-Visualization/tf-classification.ipynb)
-* [텐서플로 허브 Tensorflow Hub](./Python-and-Data-Visualization/tensorflow-hub.ipynb)
-* [텐서플로 전이학습 Tensorflow Transfer Learning](./Python-and-Data-Visualization/tensorflow-transfer-learning.ipynb)
+* [텐서플로 허브 Tensorflow Hub](./Python-and-Data-Visualization/tf-hub.ipynb)
+* [텐서플로 전이학습 Tensorflow Transfer Learning](./Python-and-Data-Visualization/tf-transfer-learning.ipynb)
