@@ -43,7 +43,10 @@
 
 
 ## ADAM 최적화 기법 ADAM Optimizer
-[***An overview of gradient descent optimization algorithms***](https://arxiv.org/pdf/1609.04747.pdf)
+[**An overview of gradient descent optimization algorithms**](https://arxiv.org/pdf/1609.04747.pdf)
+
+[**ADAM: A METHOD FOR STOCHASTIC OPTIMIZATION**](https://arxiv.org/pdf/1412.6980.pdf)
+
 
 ### 확률적 경사 하강법 Stochastic Gradient Descent
 <img width="283" alt="sgd" src="https://user-images.githubusercontent.com/28593767/114334407-791f9280-9b85-11eb-82e5-635c078e5147.png">
