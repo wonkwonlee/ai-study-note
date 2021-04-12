@@ -46,3 +46,8 @@
 * [텐서플로 분류 Tensorflow Classification](./Python-and-Data-Visualization/tf-classification.ipynb)
 * [텐서플로 허브 Tensorflow Hub](./Python-and-Data-Visualization/tf-hub.ipynb)
 * [텐서플로 전이학습 Tensorflow Transfer Learning](./Python-and-Data-Visualization/tf-transfer-learning.ipynb)
+* [텐서플로 CNN Tensorflow CNN](./Python-and-Data-Visualization/tf-cnn.ipynb)
+
+
+
+
