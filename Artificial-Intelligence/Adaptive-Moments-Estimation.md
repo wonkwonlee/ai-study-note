@@ -13,9 +13,9 @@
 * 즉, **학습에 필요한 데이터의 부족 현상을 해결하고자 연구 되어지는 분야**가 바로 전이 학습이다.
 
 
-### 다차원 분류 Multi-Dimentional Classification
+### 다차원 분류 Multi-Dimensional Classification
 * 이미지를 넣었을 때 도메인과 품목을 동시에 판별해 주는 딥러닝 모델을 만든다고 한다면 도메인과 품목, 즉 *두 가지 차원에서의 분류를 한 번에 수행하고 결과 또한 동시에 보여줘야 하기에 난이도가 높다.*
-* **차원 축소(Dimentionality Reduction)** 이란 *복합 출력에 대한 학습 방식으로 2차원 분류를 1차원으로 줄이는 방법*이다.
+* **차원 축소(Dimensionality Reduction)** 이란 *복합 출력에 대한 학습 방식으로 2차원 분류를 1차원으로 줄이는 방법*이다.
 * 딥러닝에서는 같은 퍼셉트론이라도 어떠한 학습 과정을 거치냐에 따라 역할이 달라지게 된다. 
     + 달라지는 것은 가중치나 편향 같은 파라미터 값의 구성이며, 똑같은 퍼셉트론이라도 학습시키기에 따라 전복의 고리 수를 추정할 수도 있고 꽃 이미지를 구분할 수도 있다.
 * 즉, **동일한 구조의 신경망을 다양한 용도에 이용하기 위해서는 후처리 과정의 처리 방법만 변경** 하면 된다.
@@ -50,8 +50,7 @@
 * 심층 신경망을 더 효율적으로 학습시키기 위해서 다양한 SGD의 변형이 제시되고 있는데, 이러한 SGD의 변형은 크게 두 가지로 나눠 볼 수 있다. 
     + <img width="548" alt="sgd2" src="https://user-images.githubusercontent.com/28593767/114334408-791f9280-9b85-11eb-88a2-bff434714e5c.png">
     + 첫 번째는 **momentum** 이라는 개념을 이용하여 gradient를 수정하는 알고리즘이고 두 번째는 자동으로 learning rate를 조절하는 알고리즘이다.
-
-
+  
 ### Momentum
 <img width="273" alt="momentum" src="https://user-images.githubusercontent.com/28593767/114334409-79b82900-9b85-11eb-962a-5caf5dd4def2.png">
 
@@ -64,7 +63,7 @@
 ### Adaptive Gradient (AdaGrad)
 <img width="755" alt="adagrad" src="https://user-images.githubusercontent.com/28593767/114334410-79b82900-9b85-11eb-995c-8b3cadf81d76.png">
 
-* AdaGrad는최적화 과정을 효율적으로 만들기 위해 **고정된 learning rate가 아닌, 각각의 변수마다 적합한 learning rate를 자동으로 설정**하는 알고리즘이다.
+* AdaGrad는 최적화 과정을 효율적으로 만들기 위해 **고정된 learning rate가 아닌, 각각의 변수마다 적합한 learning rate를 자동으로 설정**하는 알고리즘이다.
 * *변화가 많았던 변수들은 최적점이 근처에 있을 확률이 높다 판단하여 learning rate값을 낮춰 더욱 세밀하게 갱신*되도록 만든다.
 * 반면 *변화가 적었던 변수들은 최적점에서 멀리 벗어나 있을 확률이 높기 때문에 learning rate값을 크게 함으로써 더욱 빠르게 최적점으로 수렴*하게 만든다.
 * ε은 일반적으로 10e−8과 같은 매우 작은 상수로 0으로 나눠지는 것을 방지하기 위해 추가된다.
@@ -86,7 +85,7 @@
 <img width="765" alt="adam" src="https://user-images.githubusercontent.com/28593767/114340237-18e31d80-9b92-11eb-996a-3f84ea1e3ca2.png">
 
 * ADAM은 딥러닝 학습에 가장 광범위하게 이용되고 있는 알고리즘으로 경험적 근거에 의하여 가장 좋은 학습 성능을 보여준 최적화 기법이다.
-* 앞서 살펴보았던 두 개의 알고리즘인 Momemtum과 RMSPropp를 합친 것 같은 알고리즘이라고 할 수 있다.
+* 앞서 살펴보았던 두 개의 알고리즘인 Momemtum과 RMSProp를 합친 것 같은 알고리즘이라고 할 수 있다.
 * 수식을 통해 살펴보면 *g_ij*를 통해 학습률을 조절하는 RMSProp의 방식이 눈에 들어오지만, *v*를 구하는 과정에서는 Momentum의 방식이 쓰인다.
 * *g*와 *v*는 지수 이동 평균으로 구해지고 𝛽1, 𝛽2 은 0과 1 사이의 값을 갖지만 일반적으로 0.9, 0.999로 설정된다.
 * ADAM에서는 v_ij와 g_ij 값을 그대로 이용하지 않는다. 
