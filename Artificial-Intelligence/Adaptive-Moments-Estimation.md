@@ -1,9 +1,9 @@
 # ADAM 알고리즘 Adaptive Moments Estimation
 
-## 딥러닝에서의 다차원 분류 및 ADAM 알고리즘
+## 딥러닝에서의 다차원 분류 및 Adam 알고리즘
 <img width="500" alt="office31" src="https://user-images.githubusercontent.com/28593767/114334392-745ade80-9b85-11eb-81da-011bd93430cf.png">
 
-* *두 가지 차원에서 동시에 분류를 수행하는 다차원 분류 신경망*에 ADAM 알고리즘을 적용하여 신경망 모델의 학습 품질을 향상시킨다.
+* *두 가지 차원에서 동시에 분류를 수행하는 다차원 분류 신경망*에 Adam 알고리즘을 적용하여 신경망 모델의 학습 품질을 향상시킨다.
 * office31 데이터셋은 컴퓨터 비전 분야에서의 전이학습 연구용으로 구축된 표준 벤치마크 데이터셋으로 수집 방법에 따른 3가지 도메인과 31가지 사무용품 이미지 4,652장으로 구성되어 있다.
 * 즉, 한 장의 사진은 31가지 사무용품 중 어떠한 품목에 속하는지, 그리고 어떠한 도메인에서 수집이 되었는지 이중으로 레이블링 되어 있다.
 
@@ -43,6 +43,8 @@
 
 
 ## ADAM 최적화 기법 ADAM Optimizer
+[***An overview of gradient descent optimization algorithms***](https://arxiv.org/pdf/1609.04747.pdf)
+
 ### 확률적 경사 하강법 Stochastic Gradient Descent
 <img width="283" alt="sgd" src="https://user-images.githubusercontent.com/28593767/114334407-791f9280-9b85-11eb-82e5-635c078e5147.png">
 
@@ -70,25 +72,25 @@
 * AdaGrad의 장점은 learning rate decay와 같은 방법들을 이용하여 *학습률을 직접적으로 조절하지 않아도 된다는 점*과 모든 변수에 일괄적으로 동일한 학습률을 적용하는 기존의 SGD 기반 알고리즘과는 달리 *적합한 학습률을 자동으로 설정한다는 것*이다.
 * AdaGrad의 문제점은 학습률을 조절하는 *g_ij*은 어떠한 값을 제곱한 것이 계속 더해지기 때문에 시간이 지날수록 증가하고, 이에 따라 학습률 또한 시간에 따라 감소하여 어느 정도 지난 뒤에는 학습률이 매우 작아져 가중치가 갱신되지 않는다는 점이다.
 
-### Root Mean Square Propagation (RMSProp)
+### Root Mean Square Propagation (RMSprop)
 <img width="397" alt="rmsprop" src="https://user-images.githubusercontent.com/28593767/114340241-1a144a80-9b92-11eb-98cb-ea9e7b385709.png">
 
 <img width="397" alt="rmsprop_w" src="https://user-images.githubusercontent.com/28593767/114340240-197bb400-9b92-11eb-8f90-e2453a6d5ff8.png">
 
-* RMSProp는 학습이 진행될수록 분모에 위치하고 있는 gradient 제곱의 합인 *g_ij*의 값이 커짐으로써 학습률이 극단적으로 감소하는 AdaGrad의 문제점을 해결하기 위해 제안된 알고리즘이다.
-* RMSProp에서는 *g_ij*를 gradient 제곱의 합이 아니라 gradient 제곱의 지수 이동 평균으로 정의한다.
+* RMSprop는 학습이 진행될수록 분모에 위치하고 있는 gradient 제곱의 합인 *g_ij*의 값이 커짐으로써 학습률이 극단적으로 감소하는 AdaGrad의 문제점을 해결하기 위해 제안된 알고리즘이다.
+* RMSprop에서는 *g_ij*를 gradient 제곱의 합이 아니라 gradient 제곱의 지수 이동 평균으로 정의한다.
     + 지수 이동 평균은 최근 값을 더 잘 반영하기 위해 최근의 변화량에 더 높은 가중치를 주어 계산하는 방식을 의미한다.
 * 𝛽의 값은 Momentum과 마찬가지로 0과 1 사이의 값을 갖지만 일반적으로 0.9의 값으로 설정되고 ε은 일반적으로 10e−8과 같은 매우 작은 수로 설정한다.
-* 이전의 AdaGrad는 현재 시간까지의 변화량의 합으로 정의되기 때문에 시간이 지날수록 증가하여 학습률이 급격하게 감소하였지만, RMSProp에서는 지수 이동 평균으로 인해 현재의 *g_ij* 가 급격하게 감소하는 현상을 방지할 수 있다.
+* 이전의 AdaGrad는 현재 시간까지의 변화량의 합으로 정의되기 때문에 시간이 지날수록 증가하여 학습률이 급격하게 감소하였지만, RMSprop에서는 지수 이동 평균으로 인해 현재의 *g_ij* 가 급격하게 감소하는 현상을 방지할 수 있다.
 
-### Adaptive Momentum Estimation (ADAM)
+### Adaptive Momentum Estimation (Adam)
 <img width="765" alt="adam" src="https://user-images.githubusercontent.com/28593767/114340237-18e31d80-9b92-11eb-996a-3f84ea1e3ca2.png">
 
-* ADAM은 딥러닝 학습에 가장 광범위하게 이용되고 있는 알고리즘으로 경험적 근거에 의하여 가장 좋은 학습 성능을 보여준 최적화 기법이다.
-* 앞서 살펴보았던 두 개의 알고리즘인 Momemtum과 RMSProp를 합친 것 같은 알고리즘이라고 할 수 있다.
-* 수식을 통해 살펴보면 *g_ij*를 통해 학습률을 조절하는 RMSProp의 방식이 눈에 들어오지만, *v*를 구하는 과정에서는 Momentum의 방식이 쓰인다.
+* Adam은 딥러닝 학습에 가장 광범위하게 이용되고 있는 알고리즘으로 경험적 근거에 의하여 가장 좋은 학습 성능을 보여준 최적화 기법이다.
+* 앞서 살펴보았던 두 개의 알고리즘인 Momemtum과 RMSprop를 합친 것 같은 알고리즘이라고 할 수 있다.
+* 수식을 통해 살펴보면 *g_ij*를 통해 학습률을 조절하는 RMSprop의 방식이 눈에 들어오지만, *v*를 구하는 과정에서는 Momentum의 방식이 쓰인다.
 * *g*와 *v*는 지수 이동 평균으로 구해지고 𝛽1, 𝛽2 은 0과 1 사이의 값을 갖지만 일반적으로 0.9, 0.999로 설정된다.
-* ADAM에서는 v_ij와 g_ij 값을 그대로 이용하지 않는다. 
+* Adam에서는 v_ij와 g_ij 값을 그대로 이용하지 않는다. 
     + 논문에 의하면 두 값에 대한 초기값을 0 벡터로 주면, 학습 초기에 가중치들이 0으로 편향 되는 경향을 보이고 특히 decay rate가 작으면 즉 𝛽1 ,𝛽2 가 1에 가까워지면 편향은 더 심해진다고 한다.
     + <img width="719" alt="adam2" src="https://user-images.githubusercontent.com/28593767/114340231-1680c380-9b92-11eb-90a4-924301e95940.png">
 
