@@ -17,14 +17,15 @@ N, M = map(int, input().split())
 # List to store the weight of each ball
 balls = list(map(int, input().split()))
 
-# Maximum weight M is in [1, 10]
+# Maximum weight M is between 1 to 10
 weight = [0] * 11
 
-# Mark weight array
+# Count the number of balls in each weight
 for data in balls:
     weight[data] += 1
 
 result = 0
+# Loop from weight between 1 to 10
 for i in range(1, M + 1):
     # Available combinations: (total ball nums - current weight ball nums)
     N -= weight[i]
