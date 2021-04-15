@@ -16,23 +16,32 @@ for _ in range(m):
 # Store distance to each city
 distance = [-1] * (n + 1)
 # Distance from X city to X city is always 0
-distance[x] = 0
+distance[x] = 0 # distance -> [-1, 0, -1, -1, -1]
 
 # BFS algorithm
 q = deque([x])
 
 while q:
-    curr = q.popleft()
-    for next_node in graph[curr]:
+    # now: current searching node
+    now = q.popleft()
+    for next_node in graph[now]:
+        # Check if current node is unvisited
         if distance[next_node] == -1:
-            distance[next_node] = distance[curr] + 1
+            # Increase distance to current node by 1
+            # distance[now] -> 0, distance[next_node] -> 1
+            # distance[now] -> 1, distance[next_node] -> 2
+            distance[next_node] = distance[now] + 1
+            # Search for next node
             q.append(next_node)
 
+# distance -> [-1, 0, 1, 1, 2]
 check = False
 for i in range(1, n + 1):
     if distance[i] == k:
         print(i)
+        # Set check True if any node has distance of k
         check = True
 
+# If none of node has distance of k, print -1
 if check is False:
     print(-1)
