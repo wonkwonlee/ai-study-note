@@ -36,7 +36,7 @@
 * [다층 퍼셉트론 Multi-Layer Perceptron](./Artificial-Intelligence/Multi-Layer-Perceptron.md)
 * [ADAM 알고리즘 Adaptive Moments Estimation](./Artificial-Intelligence/Adaptive-Moments-Estimation.md)
 * [합성곱 신경망 Convolutional Neural Network](./Artificial-Intelligence/Convolutional-Neural-Network.md)
-* [자연어 처리 Natural Language Processing](./Artificial-Intelligence/Natural-Language-Processing.py)
+* [자연어 처리 Natural Language Processing](./Artificial-Intelligence/Natural-Language-Processing.md)
 
 
 
