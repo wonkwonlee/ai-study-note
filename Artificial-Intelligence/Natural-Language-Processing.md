@@ -7,6 +7,9 @@
 * 토큰의 단위는 **토크나이징(Tokenizing)** 방법에 따라 달라질 수 있지만 일반적으로 *일정한 의미가 있는 가장 작은 정보 단위로 결정*된다.
 * *토크나이징은 문장 형태의 데이터를 처리하기 위해 제일 처음 수행해야 하는 기본적인 작업이며 주로 텍스트 전처리 과정에서 사용*된다.
 
+![nlp](https://user-images.githubusercontent.com/28593767/115187514-6b868180-a11e-11eb-8533-d0914bcb1914.png)
+
+
 ### KoNLPy
 * [**KoNLPy**](https://konlpy-ko.readthedocs.io/ko/v0.4.3/) 는 한국어 토크나이징을 지원하는 파이썬 라이브러리로 한국어 자연어 처리에 많이 사용된다.
 * 한국어 문장을 분석하려면 토크나이징 작업을 제일 먼저 수행해야 하는데, 이때 토큰 단위를 어떻게 정의하느냐에 따라 자연어 처리 성능에 영향을 미친다.
@@ -14,20 +17,28 @@
 * 영어의 경우 단어의 변화가 크지 않고, 띄어쓰기로 단어를 구분하기 때문에 공백을 기준으로 토크나이징을 수행해도 큰 문제 없지만 *한국어는 명사와 조사를 띄어 쓰지 않고, 용언에 따라 여러 가지 어미가 붙기 때문에 띄어쓰기만으로는 토크나이징할 수 없다*.
 * 따라서 형태소 분석기를 이용하여 문장에서 형태소를 추출하면서 형태소의 뜻과 문맥을 고려해 품사 태깅을 해줘야 한다.
 
-
 ### Kkma
 * [**Kkma**](http://kkma.snu.ac.kr/documents/?doc=postag) 는 서울대학교 IDS(Intelligent Data Systems) 연구실에서 자연어 처리를 위해 개발한 한국형 형태소 분석기로 *꼬꼬마*라고 발음한다.
 * Kkma는 다음 4가지 함수를 제공한다.
 <img width="1292" alt="kkma" src="https://user-images.githubusercontent.com/28593767/115185952-cf5b7b00-a11b-11eb-8900-6b10475a3618.png">
-
 
 ### Komoran 
 * [**Komoran(Korean Morphological ANalyzer)**](https://www.shineware.co.kr/products/komoran/#demo?utm_source=komoran-kr&utm_medium=Referral&utm_campaign=github-demo) 은 Shinware에서 개발한 자바 기반 한국어 형태소 분석기로 *코모란*이라고 발음한다.
 * Komoran은 다음 3가지 함수를 제공한다.
 ![komoran](https://user-images.githubusercontent.com/28593767/115186644-0c743d00-a11d-11eb-9d0e-9e10321a5402.png)
 
+### Okt
+* [**Okt(Opensource Korean Text Processor)**](https://openkoreantext.org/) 는 트위터에서 개발한 Twitter 한국어 처리기에서 파생된 오픈소스 한국어 처리기이다.
+* Okt의 경우 앞서 소개한 형태소 분석기들보다 분석되는 품사 정보는 작지만 분석 속도는 제일 빠르고 또한 normalize() 함수를 지원해 오타가 섞인 문장을 정규화해서 처리하는데 효과적이지만 성능이 뛰어나지는 않다.
+* Okt는 다음 5가지 함수를 제공한다.
+![okt](https://user-images.githubusercontent.com/28593767/115187507-69bcbe00-a11e-11eb-9740-bb14fa6aa3ec.png)
 
+### 한국어 토크나이징
+* 영어의 경우 단순히 토큰 정보만 필요하다면 띄어쓰기만 하더라도 훌륭한 결과를 보여준다. 
+* 하지만 *한국어는 명사와 조사를 띄어쓰지 않고, 용언에 따라 여러 가지 어미가 붙기 때문에 띄어쓰기만으로는 토크나이징을 할 수 없다*. 
+* 따라서 KoNLPy의 형태소 분석기를 이용해 형태소 단위의 토큰과 품사 정보까지 추출하고 추출된 정보에서 필요 없는 정보를 제거하는 **전처리(Preprocessing)** 과정이 추가되어야 한다.
 
+![konlpy](https://user-images.githubusercontent.com/28593767/115188134-71c92d80-a11f-11eb-9dbc-e3db0889475e.png)
 
 
 
