@@ -89,12 +89,12 @@
 <img width="1256" alt="lstm2" src="https://user-images.githubusercontent.com/28593767/115660174-98cd6c80-a376-11eb-9ebd-00041a66898e.png">
 
 * U와 W는 입력과 출력에 곱해지는 가중치이다.
-* *수식 1, 2, 3*은 각각 타임스텝 t에서의 Input, Forget, Ouput 게이트를 통과한 출력을 의미한다.
+* *수식 1, 2, 3*은 각각 타임스텝 t에서의 Input, Forget, Output 게이트를 통과한 출력을 의미한다.
 * *수식 4*는 x_t와 h_(t - 1)을 가중치 U와 W에 곱한 뒤 tanh 활성화 함수를 취한 값으로 셀 상태인 c_t가 되기 전의 출력값이다.
 * *수식 5, 6*은 셀 상태와 LSTM의 출력을 계산하는 가장 중요한 부분이다.
     + 셀 상태는 Forget 게이트의 출력에 의해 이전 타임스템의 셀 상태를 얼마만큼 남길지 결정되고 새로 입력된 Input 게이트의 출력과 *수식 4*를 곱한 값을 더해서 다음 타임스텝의 셀 상태를 만든다.
 * LSTM 참고 링크: [LSTM 이해하기](https://dgkim5360.tistory.com/entry/understanding-long-short-term-memory-lstm-kr)
-* Gate Recurrent Units(GRU) 은 게이트 메커니즘이 적용된 RNN 프레임워크로 LSTM의 영감을 받아 고안된 더 간략한 구조로 만들어진 모델이다.
+* **Gate Recurrent Units(GRU)** 은 게이트 메커니즘이 적용된 RNN 프레임워크로 LSTM의 영감을 받아 고안된 더 간략한 구조로 만들어진 모델이다.
 
 
 ## 양방향 LSTM Bi-LSTM
