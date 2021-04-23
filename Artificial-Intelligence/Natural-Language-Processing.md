@@ -120,7 +120,7 @@
 ![similarity](https://user-images.githubusercontent.com/28593767/115339999-e1532180-a1e0-11eb-97cb-0a0c1e3e09bf.png)
 
 * n-gram을 이용한 문장 간의 유사도를 계산
-    1. 문장을 n-gram으로 토큰을 분리하여 **단어 문서 행렬(Term-Document Matrix, TDM)** 을 만든다.
+    1. 문장을 n-gram으로 토큰을 분리한 후 **단어 문서 행렬(Term-Document Matrix, TDM)** 을 만든다.
     2. 두 문장을 서로 비교해 동일한 단어의 출현 빈도를 확률로 계산해 유사도를 구한다.
 
 * **tf(Term Frequency)** 는 두 문장 A와 B에서 동일한 토큰의 출현 빈도를 뜻하며 tokens는 해당 문장에서 전체 토큰 수를 의미한다.
