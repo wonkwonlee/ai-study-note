@@ -25,6 +25,7 @@
 * [트리 구조 Tree](./Data-Structure-and-Algorithm/Tree.md)
 * [다이나믹 프로그래밍 Dynamic Programming](./Data-Structure-and-Algorithm/Dynamic-Programming.md)
 * [최단 경로 알고리즘 Shortest Path Algorithm](./Data-Structure-and-Algorithm/Shortest-Path-Algorithm.md)
+* [데이터베이스 Database](./Data-Structure-and-Algorithm/Database.md)
 
 
 
@@ -41,7 +42,7 @@
 
 
 
-## Data Visualization
+## Python and Data Visualization
 * [데이터 처리를 위한 Pandas](./Python-and-Data-Visualization/pandas.ipynb)
 * [데이터 시각화를 위한 Matplotlib](./Python-and-Data-Visualization/matplotlib.ipynb)
 * [텐서플로 Tensorflow](./Python-and-Data-Visualization/tensorflow.ipynb)
