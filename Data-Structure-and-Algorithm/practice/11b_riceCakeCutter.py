@@ -1,4 +1,6 @@
 """
+Rice Cake Cutter
+
 # Binary Search
 """
 
