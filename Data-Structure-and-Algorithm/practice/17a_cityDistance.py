@@ -1,5 +1,14 @@
 """
 City Distance
+
+# Example
+4 4 2 1
+1 2 
+1 3 
+2 3 
+2 4
+
+>> 4
 """
 
 from collections import deque
