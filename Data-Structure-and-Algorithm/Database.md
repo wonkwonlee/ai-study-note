@@ -108,18 +108,38 @@
 <img width="1020" alt="db_proc" src="https://user-images.githubusercontent.com/28593767/116175488-5bd4f180-a74b-11eb-8580-8dbb062e4247.png">
 
 
+## 데이터베이스 개체 활용
+
 ### 인덱스 Index
+<img width="653" alt="idx" src="https://user-images.githubusercontent.com/28593767/116338584-ef272900-a816-11eb-9233-a44079618e2f.png">
+
+<img width="780" alt="idx2" src="https://user-images.githubusercontent.com/28593767/116338574-eb93a200-a816-11eb-96bb-67b55802b2fe.png">
+
+<img width="793" alt="idx3" src="https://user-images.githubusercontent.com/28593767/116338578-edf5fc00-a816-11eb-8606-23dae11cb7f3.png">
+
 * 인덱스란 대부분의 책의 제일 뒤에 붙어있는 찾아보기와 같은 개념으로 수 많은 데이터에서 인덱스 없이 전체 데이터를 찾을 경우 시간이 매우 오래걸리게 된다.
 * *데이터베이스 튜닝이란 데이터베이스의 성능을 향상시키거나 응답하는 시간을 단축시키는 것*을 의미한다. 
     + 쿼리에 대한 응답을 줄이기 위해서 가장 집중적으로 보는 부분 중 하나가 인덱스로, 인덱스를 적절히 활용하고 있느냐에 따라서 시스템의 성능이 몇 배에서 몇 십 배 이상 차이가 날 수 있다.
 * 인덱스는 테이블의 열 단위에 생성된다.
 
 ### 뷰 View
+<img width="566" alt="view0" src="https://user-images.githubusercontent.com/28593767/116338581-ef272900-a816-11eb-9bd6-d1556899408a.png">
+
 ![view](https://user-images.githubusercontent.com/28593767/116235627-0f180780-a799-11eb-8009-440302102605.png)
 
 * 뷰란 *가상의 테이블*로 사용자 입장에서는 테이블과 동일하게 보이지만 뷰는 실제 행 데이터를 가지고 있지 않고 *진짜 테이블에 링크된 개념*이다.
 * 따라서 뷰를 SELECT하면 실제 테이블의 데이터를 조회하는 것과 동일한 결과가 된다.
 * 뷰를 이용하면 권한이 낮은 사용자가 개인 정보 유출의 위험없이 데이터를 조회할 수 있다.
 
+### 스토어드 프로시저 Stored Procedure
+<img width="606" alt="procedure" src="https://user-images.githubusercontent.com/28593767/116338585-efbfbf80-a816-11eb-8c56-61ea4ec23d58.png">
 
+* 스토어드 프로시저란 *MySQL에서 제공해주는 프로그래밍 기능*으로 간단히 말해 *SQL문을 하나로 묶어서 편리하게 사용하는 기능*이라고 할 수 있다.
+    + SQL을 묶는 개념 외에 다른 프로그래밍 언어와 같은 기능을 담당할 수도 있다. 
+* 실무에서는 SQL문(주로 SELECT)을 매번 하나하나 수행하기 보다는 스토어드 프로시저를 만들어 놓은 후에 호출하는 방식을 많이 사용한다.
 
+### 트리거 Trigger
+<img width="619" alt="trigger" src="https://user-images.githubusercontent.com/28593767/116338586-f0585600-a816-11eb-85bf-44cbaf66e018.png">
+
+* 트리거란 *테이블에 부착되어서 테이블에 INSERT나 UPDATE 또는 DELETE 작업이 발생되면 실행되는 코드*를 말한다.
+* 회원이 탈퇴할 경우 회원 테이블(memberTBL) 에서 정보를 삭제하면서 자동으로 삭제될 데이터를 삭제회원 테이블(deletedMemberTBL) 에 저장할 수 있다.
