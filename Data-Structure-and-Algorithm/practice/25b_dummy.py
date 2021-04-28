@@ -25,31 +25,23 @@ Input 5: L lines of turning directions (time, direction)
 from collections import deque
 
 # N size of square board
-# n = int(input())
-n = 6
+n = int(input())    # n = 6
 # N x N square board
 graph = [[0] * n for _ in range(n)]
 # K number of apples
-# k = int(input())
-k = 3
+k = int(input())    # k = 3
 
 # Locate apples to coordinates
-# for _ in range(k):
-#     a, b = map(int, input().split())
-#     # Coordinate is 0 if empty, 1 if apple exists, and 2 if snake body exists
-#     graph[a-1][b-1] = 1
-
-graph[2][3] = 1
-graph[1][4] = 1
-graph[4][2] = 1
-
+for _ in range(k):
+    a, b = map(int, input().split())
+    # Coordinate is 0 if empty, 1 if apple exists, and 2 if snake body exists
+    graph[a-1][b-1] = 1
 
 
 # print(graph)
 
 # L number of changing directions
-# l = int(input())
-l = 3
+l = int(input())    # l = 3
 
 count = 0
 directions = []
