@@ -20,74 +20,117 @@ Input 5: L lines of turning directions (time, direction)
 17 D
 
 >> 9
+
+10
+4
+1 2
+1 3
+1 4
+1 5
+4
+8 D
+10 D
+11 D
+13 L
+
+>> 21
 """
 
-from collections import deque
 
-# N size of square board
+# N size of square board, K number of apples
 n = int(input())    # n = 6
-# N x N square board
-graph = [[0] * n for _ in range(n)]
-# K number of apples
 k = int(input())    # k = 3
 
-# Locate apples to coordinates
+# N x N square board
+graph = [[0] * (n + 1) for _ in range(n + 1)]
+
+# Mark apples as 1
 for _ in range(k):
     a, b = map(int, input().split())
-    # Coordinate is 0 if empty, 1 if apple exists, and 2 if snake body exists
-    graph[a-1][b-1] = 1
-
+    graph[a][b] = 1
 
 # print(graph)
 
 # L number of changing directions
 l = int(input())    # l = 3
 
-count = 0
-directions = []
+# List to store turning information
+info = []           # info = [(3, D), (15, L), (17, D)]
 for _ in range(l):
-    x, y = input().split()
-    # print(int(x) - count)
-    directions.append([int(x) - count, y])
-    count = int(x)
+    i, j = input().split()
+    info.append((int(i), j))
 
-# Current moving direction
-move_dir = 0
+# Move directions, x is vertical and y is horizontal
+# Facing right-side at first (East, South, West, North)
+dx = [0, 1, 0, -1]
+dy = [1, 0, -1, 0]
 
-snake.append([0, 0])
 
-# Move directions
-dx = [1, -1, 0, 0]
-dy = [0, 0, 1, -1]
+def dfs_snake():
+    # Initial state
+    x, y = 1, 1
+    # Mark snake as 2
+    graph[x][y] = 2
+    # Moving direction is initially east
+    direction = 0
+    # Store time in second
+    time = 0
+    # Index for info array
+    index = 0
+    q = [(x, y)]    # [(1, 1)]
 
-# 
-graph[0][0] = 2
-time = 0
-
-while True:
-
-    nx = x + dx[move_dir]
-    ny = y + dy[move_dir]
-
-    # If snake hits the wall or its tail, break the loop
-    if nx < 0 or ny < 0 or nx >= n or ny >= n or graph[nx][ny] == 1:
-        time += 1
-        break
-    else:
-        # If (nx, ny) is apple
-        if graph[nx][ny] == 1:
-            # Increase snake body
-            graph[nx][ny] = 2
-            snake.append([nx, ny])
+    while True:
+        # (1,1) -> (1,2) -> (1,3) -> (1,4) -> (2,4) -> ...
+        nx = x + dx[direction]
+        ny = y + dy[direction]
+        # print("Current snake position nx, ny : ", nx, ny)
+        # Out of boundary (Square size: N+1 * N+1)
+        if nx < 1 or nx > n or ny < 1 or ny > n or graph[nx][ny] == 2:
+            time += 1
+            break
         else:
-            pass
+            if graph[nx][ny] == 0:
+                # Mark snake's new position as 2
+                graph[nx][ny] = 2
+                # Add a new position to the queue
+                q.append((nx, ny))
+                # Use pop(0) to pop the first element in the queue
+                px, py = q.pop(0)
+                # Update previous position as empty by marking 0
+                graph[px][py] = 0
 
-    # Update current position and increase time
-    x, y = nx, ny
-    time += 1
+            # If new position is apple
+            if graph[nx][ny] == 1:
+                # Increase snake body and mark as 2
+                graph[nx][ny] = 2
+                # Add a new position to the queue
+                q.append((nx, ny))
+
+        # Update current position to a new position
+        x, y = nx, ny
+        time += 1
+
+        # If it is time to turn, change direction
+        # info[index][0] -> 3, 15, 17
+        # index = 0, l = 0, info = [(3, D), (15, L), (17, D)]
+        if index < l and time == info[index][0]:
+            # Update direction by running turn function
+            direction = turn(direction, info[index][1])
+            index += 1
+
+    return time
 
 
+# Define turn function
+def turn(direction, c):
+    # If c == 'L', turn left 
+    if c == 'L':
+        direction = (direction - 1) % 4
+    # If c == 'D', turn right
+    else:
+        direction = (direction + 1) % 4
+
+    return direction
 
 
-
-
+print(dfs_snake())
