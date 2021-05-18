@@ -1,7 +1,7 @@
 # 멋쟁이사자처럼 K-Digital Training AI Training
 > [LikeLion] K-Digital Training Review Note
 > 
-> Since 2021.03.08 
+> 2021.03.08 ~ 2021.05.25
 
 
 ## Mathematics for Machine Learning
