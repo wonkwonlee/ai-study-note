@@ -1,4 +1,4 @@
-# GAN Generative Adversarial Networks
+# GAN Generative Adversarial Network
 
 ## Turing Test
 > *기계는 사고할 수 있을까?* 엘런 튜링은 그의 논문 "**computing machinery and intelligence**" 에서 오늘날 튜링 테스트라고 알려진 이미테이션 게임이라는 실험을 제안했다. 
@@ -12,7 +12,7 @@
 ## 생성적 적대 신경망 GAN
 <img width="1005" alt="gan" src="https://user-images.githubusercontent.com/28593767/116950074-f3dc5900-acbe-11eb-986b-dddb5bc6b4c5.png">
 
-* GAN은 **생성적 적대 신경망(Generative Adversarial Networks)** 의 약자로 동시에 두 개의 모델을 훈련하는 머신러닝의 한 종류이다.
+* GAN은 **생성적 적대 신경망(Generative Adversarial Network)** 의 약자로 동시에 두 개의 모델을 훈련하는 머신러닝의 한 종류이다.
     + **생성자(Generator)** 는 가짜 데이터를 생성하도록 훈련되고 **판별자(Discriminator)** 는 실제 샘플과 가짜 샘플을 구분하도록 훈련한다.
 * **생성적(Generative)** 라는 용어는 *새로운 데이터를 생성한다는 이 모델의 목적*을 나타낸다.
     + GAN이 생성하기 위해 학습할 데이터는 훈련 데이터셋에 따라 결정된다. 

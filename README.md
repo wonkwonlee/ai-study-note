@@ -40,7 +40,7 @@
 * [자연어 처리 Natural Language Processing](./Artificial-Intelligence/Natural-Language-Processing.md)
 * [순환 신경망 Recurrent Neural Network](./Artificial-Intelligence/Recurrent-Neural-Network.md)
 * [강화 학습 Reinfrocement Learning](./Artificial-Intelligence/Reinforcement-Learning.md)
-* [GAN Generative Adversarial Networks](./Artificial-Intelligence/Generative-Adversarial-Networks.md)
+* [GAN Generative Adversarial Network](./Artificial-Intelligence/Generative-Adversarial-Network.md)
 
 
 
