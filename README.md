@@ -57,3 +57,8 @@
 
 
 
+## Project
+* [코로나 데이터 시각화](https://github.com/wonkwonlee/covid-data-analysis)
+* [KBO OPS 예측](https://github.com/wonkwonlee/Predict-KBO-OPS)
+* [AI 소설 작가 분류](https://github.com/wonkwonlee/dacon-ai-writing-style-classification)
+* [AI 산사태 예측](https://github.com/wonkwonlee/a2w-kma-big-data-contest)
