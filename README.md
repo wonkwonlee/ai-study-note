@@ -1,4 +1,4 @@
-# 멋쟁이사자처럼 K-Digital Training AI Training
+# 멋쟁이사자처럼 K-Digital Training AI School
 > [LikeLion] K-Digital Training Review Note
 > 
 > 2021.03.08 ~ 2021.05.25
@@ -53,12 +53,12 @@
 * [텐서플로 허브 Tensorflow Hub](./Python-and-Data-Visualization/tf-hub.ipynb)
 * [텐서플로 전이학습 Tensorflow Transfer Learning](./Python-and-Data-Visualization/tf-transfer-learning.ipynb)
 * [텐서플로 CNN Tensorflow CNN](./Python-and-Data-Visualization/tf-cnn.ipynb)
-* [OpenCV Open-Source Computer Vision Library](./Python-and-Data-Visualization/opencv.ipynb)
+* [OpenCV Open-Source Computer Vision](./Python-and-Data-Visualization/opencv.ipynb)
 
 
 
 ## Projects
-* [코로나 데이터 시각화 COVID19 Data Visualization](https://github.com/wonkwonlee/covid-data-analysis)
+* [코로나 데이터 시각화 COVID-19 Data Visualization](https://github.com/wonkwonlee/covid-data-analysis)
 * [KBO OPS 예측 KBO OPS Prediction](https://github.com/wonkwonlee/Predict-KBO-OPS)
 * [소설 작가 분류 Novelist Classification](https://github.com/wonkwonlee/dacon-ai-writing-style-classification)
 * [산사태 예측 Landslide Prediction](https://github.com/wonkwonlee/a2w-kma-big-data-contest)
