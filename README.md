@@ -1,5 +1,5 @@
-# 멋쟁이사자처럼 K-Digital Training AI School
-> [LikeLion] K-Digital Training Review Note
+# LikeLion K-Digital Training AI Boost Camp
+> AI/ML Review Note
 > 
 > 2021.03.08 ~ 2021.05.25
 
