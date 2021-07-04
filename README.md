@@ -1,5 +1,5 @@
 # LikeLion K-Digital Training AI Boost Camp
-> AI/ML Review Note
+> AI/ML Review Notes
 > 
 > 2021.03.08 ~ 2021.05.25
 
