@@ -1,8 +1,8 @@
-# LikeLion K-Digital Training AI Bootcamp
+# AI Study Note
 > AI/ML Review Notes
 > 
-> 2021.03.08 ~ 2021.05.25
-
+> Written in 2021
+> 멋쟁이사자처럼 스터디노트
 
 ## Mathematics for Machine Learning
 * [Jupyter Notebook & Markdown](./Mathematics-for-Machine-Learning/Jupyter-and-Markdown.md)
